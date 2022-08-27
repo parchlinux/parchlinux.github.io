@@ -1,3 +1,3 @@
-# parch Linux static website
+# Parch Linux static site
 
-[+](https://parchlinux.github.io)
+[parchlinux.github.io](parchlinux.github.io)
