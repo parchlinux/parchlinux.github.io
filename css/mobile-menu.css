@@ -1,0 +1,264 @@
+
+.uc-mobile-menu-wrapper,
+.uc-mobile-menu-pusher,
+.uc-mobile-menu-contents {
+    height : 100%;
+}
+
+.uc-mobile-menu-contents {
+      /* overflow-y : scroll;
+   background : #f3efe0; */
+}
+
+.uc-mobile-menu-open .uc-mobile-menu-contents,
+.uc-mobile-menu-open .uc-mobile-menu-contents-inner {
+
+}
+
+.uc-mobile-menu-html-open, .uc-mobile-menu-body-open{
+    height: 100%
+}
+
+.uc-mobile-menu-contents,
+.uc-mobile-menu-contents-inner {
+    position : relative;
+}
+
+.uc-mobile-menu-wrapper {
+    position : relative;
+    overflow : hidden;
+}
+
+.uc-mobile-menu-pusher {
+    position           : relative;
+    left               : 0;
+    z-index            : 99;
+    height             : 100%;
+    -webkit-transition : -webkit-transform 0.5s;
+    -moz-transition : -moz-transform 0.5s;
+    -ms-transition : -ms-transform 0.5s;
+    -o-transition : -o-transform 0.5s;
+    transition         : transform 0.5s;
+}
+
+.uc-mobile-menu-pusher::after {
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    width              : 0;
+    height             : 0;
+    background         : rgba(0, 0, 0, 0.5);
+    content            : '';
+    opacity            : 0;
+    -webkit-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    -moz-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    -o-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition         : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    z-index: 999;
+}
+
+.uc-mobile-menu-open .uc-mobile-menu-pusher::after {
+    width              : 100%;
+    height             : 100%;
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s;
+    -moz-transition : opacity 0.5s;
+    -o-transition : opacity 0.5s;
+    transition         : opacity 0.5s;
+}
+
+.uc-mobile-menu-container {
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    z-index            : 100;
+    visibility         : hidden;
+    width              : 300px;
+    height             : 100%;
+    background         : #27272C; /* Will Change */
+    -webkit-transition : all 0.5s;
+    -moz-transition : all 0.5s;
+    -o-transition : all 0.5s;
+    transition         : all 0.5s;
+}
+
+.uc-mobile-menu-container::after {
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    width              : 100%;
+    height             : 100%;
+    background         : rgba(0, 0, 0, 0.5);
+    content            : '';
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s;
+    -moz-transition : opacity 0.5s;
+    -o-transition : opacity 0.5s;
+    transition         : opacity 0.5s;
+}
+
+.uc-mobile-menu-open .uc-mobile-menu-container::after {
+    width              : 0;
+    height             : 0;
+    opacity            : 0;
+    -webkit-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    -moz-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    -o-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition         : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.uc-mobile-menu-container > div {
+    overflow-y : auto;
+    overflow-x : hidden;
+    height     : calc(100% - 45px);
+   /* visibility : hidden;    Remove or Comments for windows scroll */
+}
+
+.uc-mobile-menu-container > div > div {
+    visibility : visible;
+}
+
+.uc-mobile-menu-left .uc-mobile-menu-container {
+    left : 0;
+}
+
+.uc-mobile-menu-right .uc-mobile-menu-container {
+    left  : auto;
+    right : 0;
+}
+
+/* Individual effects */
+
+/* Effect : Slide along : done*/
+
+.uc-mobile-menu-left.slide-along.uc-mobile-menu-open .uc-mobile-menu-pusher {
+    -webkit-transform : translate3d(300px, 0, 0);
+    -moz-transform : translate3d(300px, 0, 0);
+    -ms-transform : translate(300px, 0, 0);
+    -o-transform : translate3d(300px, 0, 0);
+    transform         : translate3d(300px, 0, 0);
+}
+
+.uc-mobile-menu-right.slide-along.uc-mobile-menu-open .uc-mobile-menu-pusher {
+    -webkit-transform : translate3d(-300px, 0, 0);
+    -moz-transform : translate3d(-300px, 0, 0);
+    -ms-transform : translate(-300px, 0);
+    -o-transform : translate3d(-300px, 0, 0);
+    transform         : translate3d(-300px, 0, 0);
+}
+
+.uc-mobile-menu-left.slide-along .uc-mobile-menu-container {
+    z-index           : 1;
+    -webkit-transform : translate3d(-50%, 0, 0);
+    -moz-transform : translate3d(-50%, 0, 0);
+    -ms-transform : translate(-50%, 0);
+    -o-transform : translate3d(-50%, 0, 0);
+    transform         : translate3d(-50%, 0, 0);
+}
+
+.uc-mobile-menu-right.slide-along .uc-mobile-menu-container {
+    z-index           : 1;
+    -webkit-transform : translate3d(50%, 0, 0);
+    -moz-transform : translate3d(50%, 0, 0);
+    -ms-transform : translate(50%, 0);
+    -o-transform : translate3d(50%, 0, 0);
+    transform         : translate3d(50%, 0, 0);
+}
+
+.slide-along.uc-mobile-menu-open .uc-mobile-menu-container {
+    visibility         : visible;
+    -webkit-transition : -webkit-transform 0.5s;
+    -moz-transition : -webkit-transform 0.5s;
+    -ms-transition : -webkit-transform 0.5s;
+    -o-transition : -webkit-transform 0.5s;
+    transition         : transform 0.5s;
+    -webkit-transform  : translate3d(0, 0, 0);
+    -moz-transform  : translate3d(0, 0, 0);
+    -ms-transform  : translate(0, 0);
+    -o-transform  : translate3d(0, 0, 0);
+    transform          : translate3d(0, 0, 0);
+}
+
+.slide-along .uc-mobile-menu-container::after {
+    display : none;
+}
+
+
+
+
+/* Effect 9: Scale down pusher  done */
+.scale-down-pusher.uc-mobile-menu-wrapper {
+    -webkit-perspective : 1000px;
+    -moz-perspective : 1000px;
+    -ms-perspective : 1000px;
+    -o-perspective : 1000px;
+    perspective         : 1000px;
+}
+
+.scale-down-pusher .uc-mobile-menu-pusher {
+    -webkit-transform-style : preserve-3d;
+    -moz-transform-style : preserve-3d;
+    -ms-transform-style : preserve-3d;
+    -o-transform-style : preserve-3d;
+    transform-style         : preserve-3d;
+}
+
+.scale-down-pusher.uc-mobile-menu-open .uc-mobile-menu-pusher {
+    -webkit-transform : translate3d(0, 0, -300px);
+    -moz-transform : translate3d(0, 0, -300px);
+    -ms-transform : translate3d(0, 0, -300px);
+    -o-transform : translate3d(0, 0, -300px);
+    transform         : translate3d(0, 0, -300px);
+    overflow: hidden;
+}
+
+.uc-mobile-menu-left.scale-down-pusher .uc-mobile-menu-container {
+    opacity           : 1;
+    -webkit-transform : translate3d(-100%, 0, 0);
+    -moz-transform : translate3d(-100%, 0, 0);
+    -ms-transform : translate(-100%, 0);
+    -o-transform : translate3d(-100%, 0, 0);
+    transform         : translate3d(-100%, 0, 0);
+}
+
+.uc-mobile-menu-right.scale-down-pusher .uc-mobile-menu-container {
+    opacity           : 1;
+    -webkit-transform : translate3d(100%, 0, 0);
+    -moz-transform : translate3d(100%, 0, 0);
+    -ms-transform : translate(100%, 0);
+    -o-transform : translate3d(100%, 0, 0);
+    transform         : translate3d(100%, 0, 0);
+}
+
+.scale-down-pusher.uc-mobile-menu-open .uc-mobile-menu-container {
+    visibility         : visible;
+    -webkit-transition : -webkit-transform 0.5s;
+    -moz-transition : -webkit-transform 0.5s;
+    -ms-transition : -webkit-transform 0.5s;
+    -o-transition : -webkit-transform 0.5s;
+    transition         : transform 0.5s;
+    -webkit-transform  : translate3d(0, 0, 0);
+    -moz-transform  : translate3d(0, 0, 0);
+    -ms-transform  : translate(0, 0);
+    -o-transform  : translate3d(0, 0, 0);
+    transform          : translate3d(0, 0, 0);
+}
+
+.scale-down-pusher .uc-mobile-menu-container::after {
+    display : none;
+}
+
+
+
+/*IE fix*/
+.ie9 .reveal .uc-mobile-menu-container,
+.ie10 .reveal .uc-mobile-menu-container,
+.ie11 .reveal .uc-mobile-menu-container{
+    display:none !important;
+}
+
+.ie9 .reveal.uc-mobile-menu-open .uc-mobile-menu-container,
+.ie10 .reveal.uc-mobile-menu-open .uc-mobile-menu-container,
+.ie11 .reveal.uc-mobile-menu-open .uc-mobile-menu-container{
+    display:block !important;
+}
