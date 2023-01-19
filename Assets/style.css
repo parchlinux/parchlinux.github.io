@@ -1,0 +1,165 @@
+@import url('https://fonts.cdnfonts.com/css/open-sans');   
+
+:root {
+  --text-primary: #23232e;
+  --text-secondary: #141418;
+  --bg-primary: #b6b6b6;
+  --bg-secondary: #ececec;
+  --blue: #1793D1;
+}
+
+* {
+  transition: all 300ms;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.left , .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left {
+  align-items: flex-start;
+}
+
+.rightNav {
+  display: flex;
+  gap: 1.5rem;
+  max-width: fit-content;
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+}
+
+.icon {
+  width: 2.5rem;
+  height: auto;
+}
+
+.icon:hover, a:hover {
+  transform: scale(1.1);
+}
+
+.button {
+  background: var(--blue);
+  color: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 99rem;
+}
+
+
+/* Small screens */
+@media only screen and (max-width: 53rem) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .rightNav {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .Arch {
+    font-size: 3.5rem;
+    color: var(--blue);
+    font-weight: bolder;
+  }
+
+  .screenShot {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 53rem) {
+  .mainContainer {
+    flex-direction: row;
+  }
+
+  .rightNav {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  .Arch {
+    font-size: 4.5rem;
+    color: var(--blue);
+    font-weight: bolder;
+  }
+  
+  .screenShot {
+    max-width: 100%;
+    max-height: 70vh;
+    width: 100%;
+  }
+}
