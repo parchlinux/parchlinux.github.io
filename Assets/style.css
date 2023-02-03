@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/open-sans');   
+@import url('https://fonts.cdnfonts.com/css/open-sans');
 
 :root {
   --text-primary: #23232e;
@@ -111,11 +111,11 @@ h1, h2 {
   h1 {
     font-size: 3.5rem;
   }
-  
+
   h2 {
     font-size: 2rem;
   }
-  
+
   .Arch {
     font-size: 3.5rem;
     color: var(--blue);
@@ -146,17 +146,17 @@ h1, h2 {
   h1 {
     font-size: 4.5rem;
   }
-  
+
   h2 {
     font-size: 3rem;
   }
-  
+
   .Arch {
     font-size: 4.5rem;
     color: var(--blue);
     font-weight: bolder;
   }
-  
+
   .screenShot {
     max-width: 100%;
     max-height: 70vh;
