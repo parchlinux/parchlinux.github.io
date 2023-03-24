@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css"/>    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet">
 
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -23,7 +24,7 @@
 
     <title>Parch Linux</title>
 </head>
-<body class="font-inter dark:bg-gray-800 selection:bg-[#007bff] selection:text-white">
+<body class="user-select-none font-inter dark:bg-gray-800 selection:bg-[#007bff] selection:text-white">
     
     
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
@@ -95,7 +96,7 @@
 
 
 
-  <div class="flex flex-col justify-center items-center mt-8 p-2">
+  <div class="flex flex-col justify-center items-center mt-12 p-2">
 
         <div class="text-6xl mt-2">
             <h1 data-aos="zoom-in-down" data-aos-duration="1000" class="animate-pulse text-blue-400 sm:text-6xl font-semibold">Parch Linux</h1>
@@ -111,14 +112,28 @@
         <div class="mt-4 p-4 text-sm ">
             <p data-aos="zoom-in-up" data-aos-duration="1000" class="lg:text-base text-center font-semibold text-gray-900 dark:text-gray-100">The parch is an os based on the Arch Linux, Parch tries to look like the Arch but with an easy and Graphical installation.</p>
         </div>
-
-        
-        <div data-aos="fade-up" data-aos-duration="1500" class="h-60 mt-64 p-2">
-            <img class="sm:h-96 rounded-lg" loading="lazy" src="./assets/img/plasma.jpg" loading="lazy" alt="plasma">
-        </div>
   </div>
 
-  
+  <div class="flex justify-center items-center mt-44 p-4">
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <div class="relative h-52 overflow-hidden sm:h-96">
+
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./assets/img/gnome.webp" class="absolute block   h-52 sm:h-60 md:h-80 lg:h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./assets/img/kde.webp" class="absolute block     h-52 sm:h-60 md:h-80 lg:h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./assets/img/cinamon.webp" class="absolute block h-52 sm:h-60 md:h-80 lg:h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="assets/img/xfce.webp" class="absolute block      h-52 sm:h-60 md:h-80 lg:h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+
+      </div>
+  </div>
+</div>
 
   
 
