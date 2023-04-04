@@ -32,3 +32,15 @@ html, textarea, .scroll-hide{
   -ms-user-select: none;  /* IE10+/Edge */
   user-select: none;  /* Standard */
 }
+
+
+.typed-cursor {
+    font-size: 44px;
+    font-weight: bold;
+    color: #000000;
+
+}
+  
+.dark .typed-cursor {
+    color: #ffffff;
+}
