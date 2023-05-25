@@ -12,8 +12,6 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -95,78 +93,45 @@
   </nav>
   
 
-  <div class="mt-8 p-2 flex justify-center items-center">
-    <div class="text-4xl">
-    <span id="typed" class="text-gray-900 dark:text-gray-100 font-semibold sm:text-5xl"></span>
-  </div>
-</div>
 
-  <div class="flex justify-center items-center mt-20 mb-60">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 p-4 gap-8">
-  
-      <div class="mb-4" data-aos="zoom-in">
-          <div class="max-w-sm bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-[#161B22] dark:border-gray-700">
-              <img class="rounded-t-lg" src="./assets/img/XFCE-2.webp" alt="xfce" />
-              <div class="p-5 flex flex-row justify-between">
-                  <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">XFCE</h5>
-                  <a href="https://github.com/parchlinux/parch-iso-xfce/releases/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Download
-                      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-              </div>
-          </div>
-      </div>
-  
-  
-      <div class="mb-4" data-aos="zoom-in">
-          <div class="max-w-sm bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-[#161B22] dark:border-gray-700">
-              <img class="rounded-t-lg" src="./assets/img/gnome.webp" alt="gnome" />
-              <div class="p-5 flex flex-row justify-between">
-                  <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">GNOME</h5>
-                  <a href="https://github.com/parchlinux/parch-iso-gnome/releases/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Download
-                      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-              </div>
-          </div>
-      </div>
-  
-      <div class="mb-4" data-aos="zoom-in">
-          <div class="max-w-sm bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-[#161B22] dark:border-gray-700">
-              <img class="rounded-t-lg" src="./assets/img/PLASMA-1.webp" alt="kde plasma" />
-              <div class="p-5 flex flex-row justify-between">
-                  <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">KDE PLASMA</h5>
-                  <a href="https://github.com/parchlinux/parch-iso-plasma/releases/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Download
-                      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-              </div>
-          </div>
-      </div>
-  
-  
-      <div class="mb-4" data-aos="zoom-in">
-          <div class="max-w-sm bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-[#161B22] dark:border-gray-700">
-              <img class="rounded-t-lg" src="./assets/img/cinnamon-3.webp" alt="cinnamon" />
-              <div class="p-5 flex flex-row justify-between">
-                  <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">cinnamon</h5>
-                  <a href="https://github.com/parchlinux/parch-iso-cinnamon/releases/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Download
-                      <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </a>
-              </div>
-          </div>
-      </div>
+  <div class="flex flex-col justify-center items-center mt-8 p-2">
 
+    <div class="mb-4">
+        <h3 class="text-gray-900 dark:text-blue-400">Parch™ Developers : </h3>
     </div>
+
+
+    <div class="grid mb-8 shadow-md md:mb-12 md:grid-cols-2 border dark:border-gray-700">
+      <figure class="flex flex-col items-center justify-center  p-8 text-center bg-white border-gray-200 dark:bg-[#161B22] dark:border-gray-700">
+
+          <figcaption class="flex items-center justify-center space-x-3">
+              <img class="rounded-full w-9 h-9" src="./assets/img/sohrab.webp" alt="profile">
+              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                  <div>Sohrab Behdani</div>
+                  <div class="text-sm font-light text-gray-500 dark:text-gray-400">Founder of Bss foundation<br><span class="text-gray-700 underline dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-600"><a href="https://github.com/behdanisohrab">Github</a></span></div>
+              </div>
+          </figcaption>    
+      </figure>
+      <figure class="flex flex-col items-center justify-center  p-8 text-center bg-white border-gray-200 dark:bg-[#161B22] dark:border-gray-700">
+
+          <figcaption class="flex items-center justify-center space-x-3">
+              <img class="rounded-full w-9 h-9" src="./assets/img/komeil.webp" alt="profile">
+              <div class="space-y-0.5 font-medium dark:text-white text-left">
+                  <div>Komeil Parseh</div>
+                  <div class="text-sm font-light text-gray-500 dark:text-gray-400">Founder of Parch Linux<br><span class="text-gray-700 underline dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-600"><a href="https://github.com/mmdbalkhi">Github</a></span></div>
+              </div>
+          </figcaption>    
+      </figure>
   </div>
   
+    
+  </div>
 
   
 
 
-<footer class="bg-gray-50 dark:bg-[#161B22]">
+<footer class="bg-gray-50 dark:bg-[#161B22] mt-32">
   <div class="mx-auto w-full container p-4 sm:p-6">
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
@@ -205,7 +170,6 @@
 
 
 
-
     <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -213,18 +177,5 @@
     <script>
         AOS.init();
     </script>
-
-
-<script type="text/javascript">
-  var typed = new Typed('#typed', {
-      strings: ['Choose your ^500','Desktop'],
-      typeSpeed: 80,
-      startDelay: 0,
-      loop: true,
-      backDelay: 1000,
-      backSpeed: 80,
-      smartBackspace: true,
-  });
-</script>
 </body>
 </html>
