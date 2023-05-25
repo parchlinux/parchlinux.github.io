@@ -1,208 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/css/style.css"/>    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-
-    <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-    <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
 
     <title>Parch Linux</title>
 </head>
-<body class="user-select-none font-inter bg-gray-50 dark:bg-[#161B22] selection:bg-[#007bff] selection:text-white">
-    
-    
-<nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-gray-50 dark:bg-[#161B22]">
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
 
-          <img src="./assets/img/logo.webp" class="h-16 w-16 mt-1" alt="Logo"/>
+<body class="bg-zinc-900 text-gray-300">
 
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-6 md:mt-0 md:text-sm md:font-medium md:border-0 bg-gray-50 dark:bg-[#161B22] dark:border-gray-700">
-           <li>
-            <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">Home</a>
-          </li>
-          <li>
-            <a href="download.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">Download</a>
-          </li>
-          <li>
-            <a href="https://fosstorrents.com/distributions/parch-linux/" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">Torrent</a>
-          </li>
-          <li>
-            <a href="https://archlinux.org/packages" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">Packages</a>
-          </li>
-          <li>
-            <a href="https://aur.archlinux.org/packages" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">Aur</a>
-          </li>
-          <li>
-            <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">About</a>
-          </li>
-          <li>
-            <a href="https://parchlinux.ir/blog" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent">Blog</a>
-          </li>
-          
+    <nav
+        class="max-w-screen-xl bg-zinc-900 sticky top-0 mx-auto flex justify-between items-center h-14 px-4 border-b border-zinc-800">
+        <div class="flex justify-center items-center space-x-2">
+            <img src="./assets/img/logo.svg" alt="logo" class="w-10 h-10">
+            <span class="text-2xl font-semibold">Parch Linux</span>
+        </div>
 
-          <li>
-            <a id="theme-toggle"
-            class="block py-2 pl-3 pr-4 text-gray-700 cursor-pointer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-100 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-            <svg class="icon hidden text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                id="theme-toggle-dark-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-            </svg>
-            <svg class="icon hidden text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                id="theme-toggle-light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5" />
-                <line x1="12" y1="1" x2="12" y2="3" />
-                <line x1="12" y1="21" x2="12" y2="23" />
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                <line x1="1" y1="12" x2="3" y2="12" />
-                <line x1="21" y1="12" x2="23" y2="12" />
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-            </svg>
-        </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
+        <div class="hidden sm:flex justify-center items-center">
+            <ul class="flex space-x-4 font-medium">
+                <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="download.html" class="hover:text-blue-600 transition">Download</a></li>
+                <li><a href="https://fosstorrents.com/distributions/parch-linux/" target="_blank"
+                        class="hover:text-blue-600 transition">Torrent</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition">Blog</a></li>
+            </ul>
+        </div>
 
 
+        <div class="sm:hidden">
+            <button id="menu-button" class="transition hover:bg-zinc-800 p-1 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
 
-
-  <div class="flex flex-col justify-center items-center mt-12 p-2">
-
-    <div>
-    <div class="text-6xl mt-2">
-      <span class="text-blue-400 sm:text-6xl font-semibold">Parch Linux</span>
-    </div>
-  </div>
-
-        <div class="mt-8 p-2">
-            <div class="text-2xl">
-            <span class="text-gray-900 dark:text-gray-100 font-semibold sm:text-5xl">Another distro based on</span>
+            <div id="menu" style="display: none;"
+                class="mx-auto z-20 w-full px-2 py-2 sm:hidden bg-zinc-900 fixed top-14 right-0 left-0 shadow-lg">
+                <ul class="space-y-4 font-medium">
+                    <li><a href="index.html"
+                            class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">Home</a></li>
+                    <li><a href="download.html"
+                            class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">Download</a>
+                    </li>
+                    <li><a href="https://fosstorrents.com/distributions/parch-linux/" target="_blank"
+                            class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">Torrent</a>
+                    </li>
+                    <li><a href="#"
+                            class="block rounded px-2 py-2 hover:bg-gray-100 hover:text-black transition">Blog</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="mt-6 p-2">
-          <span id="typed" class="font-black text-blue-400 text-7xl"></span>
+
+
+    <section class="max-w-screen-xl flex items-center flex-col mx-auto h-screen">
+        <div class="flex flex-col items-cneter text-center space-y-6 mt-24 px-4">
+            <!-- 
+            <span class="text-blue-400 text-5xl sm:text-6xl font-semibold">Parch Linux</span>
+
+            <span class="text-2xl font-semibold sm:text-4xl">Another distro based on</span>
+
+            <span class="font-bold text-blue-400 text-7xl">Arch</span>
+
+            <p class="text-base text-center font-medium">The parch is an os based on the Arch Linux,
+                Parch tries to look like the Arch but with an easy and Graphical installation.</p> -->
+
+            <div class="mt-8 mb-16 p-2 flex flex-col justify-center items-center">
+                <img src="./assets/img/logo.svg" alt="logo" class="h-32">
+                <span class="text-5xl mt-6 font-semibold">Parch Linux</span>
+
+                <span class="mt-2 font-normal">Another distro based on <span class="text-blue-500 font-medium">Arch</span></span>
+            </div>
+
+
+            <div>
+                <a href="download.html">
+                    <button
+                        class="mt-8 bg-blue-500 text-gray-200 transition hover:bg-blue-600 rounded-full px-10 py-2 font-medium">
+                        Download
+                    </button>
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="mt-4 p-4 text-sm">
-            <p class="lg:text-base text-center font-semibold text-gray-900 dark:text-gray-100">The parch is an os based on the Arch Linux, Parch tries to look like the Arch but with an easy and Graphical installation.</p>
+    <section class="max-w-screen-xl flex justify-center items-center flex-col my-20 mx-auto h-screen">
+        <div class="flex justify-center items-center">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4 gap-8">
+
+                <div class="block max-w-sm p-6">
+                    <h5 class="mb-2 text-2xl font-semibold">Simple</h5>
+                    <p class="font-normal">Simple installation with graphical installer and basic required programs</p>
+                </div>
+
+
+                <div class="block max-w-sm p-6">
+                    <h5 class="mb-2 text-2xl font-semibold">Open</h5>
+                    <p class="font-normal">Parch Linux and its tools are completely Open Source!</p>
+                </div>
+
+
+                <div class="block max-w-sm p-6">
+                    <h5 class="mb-2 text-2xl font-semibold ">Privacy</h5>
+                    <p class="font-normal">Your Data is your Data.
+                        Unlike any other proprietary operating systems , Parch Linux respects your privacy and doesn't
+                        collect any information or data from you</p>
+                </div>
+
+
+                <div class="block max-w-sm p-6">
+                    <h5 class="mb-2 text-2xl font-semibold">Speed</h5>
+                    <p class="font-normal">Parch Linux requires at least 1.5 GB of RAM with xfce desktop and at least 1
+                        GB with lxqt desktop
+                        Give your old system a second chance with Parch Linux</p>
+                </div>
+
+            </div>
         </div>
-
-        <a href="download.html" class="mt-8 relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-md font-medium text-gray-900 rounded-full group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-          <span class="relative px-10 py-3.5 transition-all ease-in duration-125 bg-gray-50 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-              DOWNLOAD
-          </span>
-        </a>
-  </div>
+    </section>
 
 
-
-
-<div class="mt-44 mb-24">
-
-  <div class="flex justify-center items-center p-4">
-    <img class="h-52 sm:h-60 md:h-80 lg:h-96 rounded-lg" src="./assets/img/cinnamon-3.webp" alt="ParchLinux">
-  </div>
-  
-</div>
-  
-
-
-
-
-
-<footer class="bg-gray-50 dark:bg-[#161B22]">
-  <div class="mx-auto w-full container p-4 sm:p-6">
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://bssinc.ir/" class="hover:underline">BSS OSF</a>. All Rights Reserved.</span>
-        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a target="_blank" href="https://t.me/parchlinux" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
-              </svg>                
-              <span class="sr-only">Telegram page</span>
-            </a>
-            <a target="_blank" href="https://www.youtube.com/@bssfoundation" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube"
-              viewBox="0 0 16 16">
-              <path
-                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-            </svg>                
-            <span class="sr-only">Youtube page</span>
-            </a>
-            <a target="_blank" href="https://twitter.com/bssfoss" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                <span class="sr-only">Twitter page</span>
-            </a>
-            <a target="_blank" href="https://github.com/parchlinux" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-                <span class="sr-only">GitHub account</span>
-            </a>
-            <a target="_blank" href="https://bssinc.ir/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
-                <span class="sr-only">Dribbble account</span>
-            </a>
+    <section class="max-w-screen-xl flex justify-center items-center flex-col my-20 mx-auto h-screen">
+        <div class="flex justify-center items-center px-4">
+            <img src="./assets/img/Cinnamon-3.webp" alt="Cinnamon"
+                class="md:w-3/5 rounded-lg border border-zinc-800 shadow">
         </div>
-  </div>
-</footer>
+    </section>
+
+
+    <footer class="max-w-screen-xl mx-auto bg-zinc-900 p-4 sm:p-6 border-t border-zinc-800">
+
+        <div class="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
+            <span class="text-sm text-center sm:text-left leading-loose	 font-medium">© 2023 <a target="_blank"
+                    href="https://bssinc.ir/" class="underline">BSS OSF</a>. All Rights Reserved. <br>
+
+                <span class="text-xs">
+                    Made with ❤️ By <a target="_blank" href="https://pycloud.space" class="underline">AFz.</a>
+                </span>
+            </span>
+
+
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+
+
+                <a target="_blank" href="https://github.com/parchlinux" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                    <span class="sr-only">GitHub account</span>
+
+                </a>
+
+                <a target="_blank" href="https://t.me/parchlinux" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                    </svg>
+                    <span class="sr-only">Telegram page</span>
+                </a>
+
+
+                <a target="_blank" href="https://www.youtube.com/@bssfoundation" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg>
+                    <span class="sr-only">Youtube page</span>
+                </a>
 
 
 
-    <script src="./assets/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <a target="_blank" href="https://twitter.com/bssfoss" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
 
-    <script>
-        AOS.init();
-    </script>
+            </div>
+        </div>
+    </footer>
 
-
-    <script type="text/javascript">
-      var typed = new Typed('#typed', {
-          strings: ['Arch'],
-          typeSpeed: 100,
-          startDelay: 500,
-          loop: true,
-          backDelay: 5000,
-          backSpeed: 100,
-          smartBackspace: true,
-      });
-    </script>
-
-
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
