@@ -2639,6 +2639,11 @@ html, .scroll-hide{
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-zinc-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
 }
