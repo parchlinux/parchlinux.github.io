@@ -693,6 +693,11 @@ video {
   margin-bottom: 10rem;
 }
 
+.my-60{
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -739,6 +744,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .box-border{
@@ -2019,6 +2028,14 @@ video {
   padding: 1.5rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
+.p-12{
+  padding: 3rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2708,10 +2725,6 @@ html, .scroll-hide{
 
   .sm\:hidden{
     display: none;
-  }
-
-  .sm\:h-screen{
-    height: 100vh;
   }
 
   .sm\:flex-row{
