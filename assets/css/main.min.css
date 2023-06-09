@@ -705,6 +705,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -2589,21 +2593,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-
-html::-webkit-scrollbar, .scroll-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-
-html, .scroll-hide{
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -2694,6 +2683,10 @@ html, .scroll-hide{
 }
 
 @media (min-width: 640px){
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .sm\:mb-12{
     margin-bottom: 3rem;
   }
@@ -2761,3 +2754,5 @@ html, .scroll-hide{
     }
   }
 }
+
+
