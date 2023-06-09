@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parch Linux</title>
+
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+</head>
+
+<body class="bg-[#010409] text-gray-200">
+
+    <nav class="bg-zinc-900/95 mx-auto px-4 flex justify-between items-center h-16">
+        <div class="flex justify-center items-center space-x-2">
+            <img src="./assets/img/logo-v2.svg" alt="logo" class="w-12 h-12">
+        </div>
+
+        <div class="hidden sm:flex justify-center items-center">
+            <ul class="flex gap-4 text-sm font-medium">
+                <li><a href="#Download" class="hover:text-blue-600 transition">دانلود</a></li>
+                <li><a href="https://fosstorrents.com/distributions/parch-linux/" target="_blank"
+                        class="hover:text-blue-600 transition">تورنت</a></li>
+                <li><a href="#About" class="hover:text-blue-600 transition">درباره</a></li>
+                <li><a href="#Contact-us" class="hover:text-blue-600 transition">ارتباط</a></li>
+                <li><a href="https://parchlinux.ir/blog" class="hover:text-blue-600 transition">وبلاگ</a></li>
+            </ul>
+        </div>
+
+
+        <div class="sm:hidden">
+            <button id="menu-button" class="transition hover:bg-zinc-900 p-1 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+            <div id="menu" style="display: none;"
+                class="mx-auto z-20 w-full px-2 py-2 sm:hidden bg-zinc-900/95 fixed top-14 right-0 left-0 shadow-lg">
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><a href="#Download" class="block rounded px-2 py-2.5 hover:bg-zinc-800 transition">دانلود</a>
+                    </li>
+                    <li><a href="https://fosstorrents.com/distributions/parch-linux/" target="_blank"
+                            class="block rounded px-2 py-2.5 hover:bg-zinc-800 transition">تورنت</a>
+                    </li>
+                    <li><a href="#About" class="block rounded px-2 py-2.5 hover:bg-zinc-800 transition">درباره</a>
+                    <li><a href="#Contact-us"
+                            class="block rounded px-2 py-2.5 hover:bg-zinc-800 transition">ارتباط</a>
+                    </li>
+                    <li><a href="https://parchlinux.ir/blog"
+                            class="block rounded px-2 py-2.5 hover:bg-zinc-800 transition">وبلاگ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section id="Home"
+        class="flex justify-center items-center flex-col mx-auto mt-12 sm:mt-0 sm:mb-12 h-screen">
+        <div class="flex flex-col items-cneter text-center space-y-6 px-4">
+
+            <div class="mt-8 mb-12 p-2 flex flex-col justify-center items-center">
+                <img src="./assets/img/logo-v2.svg" alt="logo" class="h-32">
+                <span class="text-5xl mt-6 font-semibold">Parch Linux</span>
+
+                <span class="mt-2 font-normal">توزیع دیگری بر پایه <span
+                        class="text-blue-500 font-medium">آرچ</span></span>
+            </div>
+
+
+            <div>
+                <a href="#Download">
+                    <button
+                        class="px-14 py-1.5 rounded-lg border border-zinc-700 transition hover:bg-gray-100 hover:text-black">
+                        دانلود
+                    </button>
+                </a>
+            </div>
+
+            <div>
+                <a href="#WhyParch">
+                    <button class="animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="WhyParch"
+        class="bg-zinc-900/95 flex justify-center items-center flex-col mx-auto p-6">
+        <div class="flex justify-center items-center mt-20 mb-20">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4 gap-8">
+
+                <div class="max-w-sm p-4">
+                    <h5 dir="auto" class="mb-2 text-2xl font-semibold">ساده</h5>
+                    <p dir="auto" class="font-normal">نصب ساده با نصاب گرافیکی و برنامه های مورد نیاز پیشفرض.</p>
+                </div>
+
+
+                <div class="max-w-sm p-4">
+                    <h5 dir="auto" class="mb-2 text-2xl font-semibold">منبع باز</h5>
+                    <p dir="auto" class="font-normal">پارچ لینوکس و تمام ابزار های آن کاملا منبع باز است.</p>
+                </div>
+
+
+                <div class="max-w-sm p-4">
+                    <h5 dir="auto" class="mb-2 text-2xl font-semibold">حریم شخصی</h5>
+                    <p dir="auto" class="font-normal">پارچ لینوکس برای حریم شخصی کاربران احترام قائل است و هیچ اطلاعاتی از کاربران خود ذخیره نمی کند.</p>
+                </div>
+
+
+                <div class="max-w-sm p-4">
+                    <h5 dir="auto" class="mb-2 text-2xl font-semibold">سرعت</h5>
+                    <p dir="auto" class="font-normal">پارچ لینوکس در دسکتاپ زفکه  1.5GB رم مصرف می کند و در دسکتاپ لکسکت 1GB با پارچ لینوکس می توانید یک شانس دوباره به کامپیوتر قدیمی خود بدهید.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Download" class="flex justify-center items-center flex-col mx-auto my-40">
+        <div class="flex justify-center items-center px-4 mb-20">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4 gap-8">
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">XFCE</h5>
+                    <a href="https://github.com/parchlinux/parch-iso-xfce/releases">
+                        <img src="./assets/img/XFCE-1.webp" alt="XFCE" class="rounded-lg">
+                    </a>
+                </div>
+
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">GNOME</h5>
+                    <a href="https://github.com/parchlinux/Parch-iso-gnome/releases">
+                        <img src="./assets/img/GNOME.webp" alt="GNOME" class="rounded-lg">
+                    </a>
+                </div>
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">KDE</h5>
+                    <a href="https://github.com/parchlinux/parch-iso-plasma/releases">
+                        <img src="./assets/img/PLASMA-1.webp" alt="Cinnamon" class="rounded-lg">
+                    </a>
+                </div>
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">CINNAMON</h5>
+                    <a href="https://github.com/parchlinux/parch-iso-cinnamon/releases">
+                        <img src="./assets/img/Cinnamon-3.webp" alt="Cinnamon" class="rounded-lg">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="flex flex-col justify-center items-center px-4 mt-20 mb-20">
+
+            <h1 class="mb-6 text-2xl font-medium">Community</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 p-4 gap-8">
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">Cutefish</h5>
+                    <a href="https://github.com/parchlinux/parch-iso-cutefish/releases">
+                        <img src="./assets/img/Cutefish-2.webp" alt="Cutefish" class="rounded-lg">
+                    </a>
+                </div>
+
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">I3</h5>
+                    <a href="#">
+                        <img src="./assets/img/parch-linux.webp" alt="I3" class="rounded-lg">
+                    </a>
+                </div>
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">DWM</h5>
+                    <a href="#">
+                        <img src="./assets/img/parch-linux.webp" alt="DWM" class="rounded-lg">
+                    </a>
+                </div>
+
+                <div class="max-w-sm p-3">
+                    <h5 class="mb-2 text-xl font-medium">LXQT</h5>
+                    <a href="#">
+                        <img src="./assets/img/parch-linux.webp" alt="LXQT" class="rounded-lg">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="About" class="bg-zinc-900/95 flex justify-center items-center flex-col mx-auto p-8 my-40">
+        <div class="flex flex-col justify-center px-2 mt-20 mb-20">
+
+            <h1 dir="auto" class="text-3xl sm:text-4xl font-semibold">درباره پارچ لینوکس</h1>
+
+
+            <div class="flex flex-col justify-center gap-8 mt-4">
+
+                <h3 dir="auto" class="text-2xl font-semibold mt-8">
+                    پارچ لینوکس چیست؟
+                </h3>
+
+                <div dir="auto" class="max-w-xl">
+                    <p class="font-normal">پارچ لینوکس یک توزیع برپایه <span
+                            class="text-blue-500">آرچ</span> است. که سعی می کند زیبا, آسان برای استفاده, سبک, سریع و پایدار باشد.</p>
+                </div>
+
+                <h3 dir="auto" class="text-2xl font-semibold mt-12">
+                    چرا اسم توزیع پارچ است؟
+                </h3>
+
+                <div dir="auto" class="max-w-xl">
+                    <p class="font-normal">
+                        
+                        در ابتدا قصد داشتیم پارچ با به پلتفرمی برای کاربران فارسی زبان تبدیل کنیم برای همین نام آن را
+                        
+                        Parch 
+                        ( <span
+                            class="text-blue-500">P</span>ersian <span class="text-blue-500">Arch</span> ) گذاشتیم. اما اکنون اهداف جامع تری نسبت به قبل داریم.
+                            
+                            
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="Contact-us" class="flex justify-center my-40 items-center mx-auto p-6">
+        <div class="flex flex-col gap-4 justify-center items-center mt-20 mb-20">
+            <h3 dir="auto" class="text-gray-100 text-2xl font-medium mb-8">ارتباط با ما</h3>
+
+            <div class="flex flex-warp gap-8">
+
+                <a target="_blank" href="https://github.com/parchlinux" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                    <span class="sr-only">GitHub account</span>
+
+                </a>
+
+                <a target="_blank" href="https://t.me/parchlinux" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                        class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                    </svg>
+                    <span class="sr-only">Telegram page</span>
+                </a>
+
+
+                <a target="_blank" href="https://www.youtube.com/@bssfoundation" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg>
+                    <span class="sr-only">Youtube page</span>
+                </a>
+
+
+
+                <a target="_blank" href="https://twitter.com/bssfoss" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+            </div>
+
+            <div class="p-4">
+                <div class="flex justify-center items-center mt-8">
+                    <a href="https://www.coffeete.ir/ParchLinux">
+                        <button
+                            class="px-8 text-sm py-2 rounded-lg border border-zinc-700 transition hover:bg-gray-100 hover:text-black">
+                            حمایت از پارچ
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="mx-auto bg-zinc-900/95 p-4 sm:p-6">
+
+        <div class="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
+
+
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+
+
+                <a target="_blank" href="https://github.com/parchlinux" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                    <span class="sr-only">GitHub account</span>
+
+                </a>
+
+                <a target="_blank" href="https://t.me/parchlinux" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                    </svg>
+                    <span class="sr-only">Telegram page</span>
+                </a>
+
+
+                <a target="_blank" href="https://www.youtube.com/@bssfoundation" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg>
+                    <span class="sr-only">Youtube page</span>
+                </a>
+
+
+
+                <a target="_blank" href="https://twitter.com/bssfoss" class="transition hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+
+            </div>
+
+            <span dir="auto" class="text-sm text-center sm:text-right leading-loose	 font-medium">© 1402 تمامی حقوق برای <a target="_blank"
+                href="https://bssinc.ir/" class="underline">BSS OSF</a> محفوظ است. <br>
+
+                <span dir="auto" class="text-xs">
+                    طراحی با ❤️ توسط <a target="_blank" href="https://pycloud.space" class="underline">AFz.</a>
+                </span>
+            </span>
+
+
+
+        </div>
+
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
