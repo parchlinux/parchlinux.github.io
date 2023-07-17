@@ -18,7 +18,7 @@ const Home = () => {
             </h1>
             <p className="hidden lg:block text-[17.4px] leading-7">Parch Linux is an open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.</p>
 
-            <div className="flex justify-center sm:justify-start items-center mb-10">
+            <div className="flex justify-center lg:justify-start items-center mb-10">
               <Link to={"/get-parch"}>
                 <button
                   className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 rounded-md text-sm font-semibold hover:bg-blue-600 transition hover:translate-y-1 bg-blue-500/95">
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='mt-6'>
+        <div className='mt-3'>
           <button className="animate-bounce cursor-default">
             <HiOutlineChevronDown className='w-7 h-7' />
           </button>
