@@ -67,11 +67,11 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavLink to={'/blog'} onClick={() => setToggleMenu(setToggleMenu(false))} className="flex items-center p-2 text-gray-50 hover:bg-zinc-800 rounded-lg ">
+              <a target='_blank' href='https://parchlinux.ir/blog/' onClick={() => setToggleMenu(setToggleMenu(false))} className="flex items-center p-2 text-gray-50 hover:bg-zinc-800 rounded-lg ">
                 <HiOutlineNewspaper className="flex-shrink-0 w-6 h-6  transition duration-75 text-gray-400" />
                 <span className="flex-1 ml-3 whitespace-nowrap">BLOG</span>
 
-              </NavLink>
+              </a>
             </li>
 
             <li>
@@ -83,11 +83,11 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavLink to={'/wiki'} onClick={() => setToggleMenu(setToggleMenu(false))} className="flex items-center p-2 text-gray-50 hover:bg-zinc-800 rounded-lg ">
+              <a target="_blank" href='https://parchlinux.ir/parchwiki/' onClick={() => setToggleMenu(setToggleMenu(false))} className="flex items-center p-2 text-gray-50 hover:bg-zinc-800 rounded-lg ">
                 <HiOutlineBookOpen className="flex-shrink-0 w-6 h-6  transition duration-75 text-gray-400" />
                 <span className="flex-1 ml-3 whitespace-nowrap">WIKI</span>
 
-              </NavLink>
+              </a>
             </li>
 
           </ul>
