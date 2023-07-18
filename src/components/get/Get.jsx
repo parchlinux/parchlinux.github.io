@@ -4,7 +4,7 @@ import { HiDownload, HiOutlineBookOpen } from 'react-icons/hi'
 const Get = () => {
   return (
     <section className="max-w-[860px] flex justify-center items-center flex-col mx-auto p-6 min-h-screen mb-10">
-      <div className="flex flex-col justify-center px-2 my-20">
+      <div className="flex flex-col justify-center px-2 mb-20">
 
         <div className="flex items-center gap-2 mb-4">
           {/* <img src="./installer.svg" alt="Installer" className="w-28 h-28" /> */}
@@ -34,9 +34,9 @@ const Get = () => {
 
         <div className='flex justify-center'>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
+          <div className="flex justify-center flex-wrap gap-8 mt-8">
 
-            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-zinc-900 rounded-lg">
+            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-[#16171D] rounded-lg">
 
               <img src="./logo.svg" alt="logo" className="w-32 h-32" />
 
@@ -60,7 +60,7 @@ const Get = () => {
 
             </div>
 
-            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-zinc-900 rounded-lg">
+            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-[#16171D] rounded-lg">
 
               <img src="./logo.svg" alt="logo" className="w-32 h-32" />
 
@@ -84,7 +84,7 @@ const Get = () => {
 
             </div>
 
-            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-zinc-900 rounded-lg">
+            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-[#16171D] rounded-lg">
 
               <img src="./logo.svg" alt="logo" className="w-32 h-32" />
 
@@ -108,7 +108,7 @@ const Get = () => {
 
             </div>
 
-            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-zinc-900 rounded-lg">
+            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-[#16171D] rounded-lg">
 
               <img src="./logo.svg" alt="logo" className="w-32 h-32" />
 
@@ -132,7 +132,7 @@ const Get = () => {
 
             </div>
 
-            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-zinc-900 rounded-lg">
+            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-[#16171D] rounded-lg">
 
               <img src="./logo.svg" alt="logo" className="w-32 h-32" />
 
@@ -156,7 +156,7 @@ const Get = () => {
 
             </div>
 
-            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-zinc-900 rounded-lg">
+            <div className="flex relative flex-col justify-center items-center w-60 h-72 bg-[#16171D] rounded-lg">
 
               <img src="./logo.svg" alt="logo" className="w-32 h-32" />
 
