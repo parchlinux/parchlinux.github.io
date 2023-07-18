@@ -3,8 +3,8 @@ import { FaGithub, FaDiscord, FaTwitter, FaTelegramPlane, FaGitlab, FaMastodon }
 
 const About = () => {
     return (
-        <section className="max-w-[860px] flex items-center flex-col mx-auto p-6 min-h-screen mb-10 mt-8">
-            <div className="flex flex-col justify-center px-2">
+        <section className="max-w-[860px] flex items-center justify-center flex-col mx-auto p-6 min-h-screen">
+            <div className="flex flex-col justify-center px-2 mb-20">
 
                 <h1 className="text-3xl sm:text-[45px] font-bold">About Parch Linux</h1>
 
