@@ -11,7 +11,7 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row items-center">
           <img src="./logo.svg" alt="Logo" className="w-48 h-48 md:w-52 md:h-52 lg:w-80 lg:h-80 mb-8" />
           <h1 className="lg:hidden text-4xl sm:text-[56px] font-bold mb-4">Parch Linux</h1>
-          <div className="flex flex-col gap-8 ml-4 max-w-lg">
+          <div className="flex flex-col gap-8 lg:ml-4 max-w-lg">
             <h1 className="text-center leading-10 text-xl lg:text-left lg:text-[30px]">
               The most advanced <br />
               Arch-Based Distribution
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='mt-3'>
+        <div className='mt-1'>
           <button className="animate-bounce cursor-default">
             <HiOutlineChevronDown className='w-7 h-7' />
           </button>
