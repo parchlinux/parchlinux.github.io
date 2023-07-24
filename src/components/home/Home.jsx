@@ -21,7 +21,7 @@ const Home = () => {
             <div className="flex justify-center lg:justify-start items-center mb-10">
               <Link to={"/get-parch"}>
                 <button
-                  className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 rounded-md text-sm font-semibold hover:bg-blue-600 transition hover:translate-y-1 bg-blue-500/95">
+                  className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-sm font-semibold hover:bg-blue-700 transition hover:translate-y-1 bg-blue-600">
                   DOWNLOAD
                   <HiDownload className="w-5 h-5 ml-2" />
 

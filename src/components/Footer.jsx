@@ -9,10 +9,10 @@ const Footer = () => {
 
       <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
         <span className="text-sm text-center sm:text-left leading-loose	 font-medium">© 2023 <a target="_blank"
-          href="https://parchlinux.ir" className="underline">PARCH</a>. All Rights Reserved. <br/>
+          href="https://bssinc.ir" className="underline hover:text-sky-500 transition">BSS OSF</a>. All Rights Reserved. <br/>
 
             <span className="text-xs">
-              Made with ❤️ By <a target="_blank" href="https://pycloud.space" className="underline">AFz.</a>
+              Made with ❤️ By <a target="_blank" href="https://pycloud.space" className="underline hover:text-sky-500 transition">AFz.</a>
             </span>
         </span>
 

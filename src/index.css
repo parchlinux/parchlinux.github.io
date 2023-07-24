@@ -28,5 +28,5 @@ p {
 }
 
 .socail-link {
-  @apply hover:bg-zinc-900 p-2 rounded-lg
+  @apply hover:bg-zinc-800 p-1.5 rounded-lg
 }
