@@ -1,17 +1,26 @@
 import { HiDownload, HiOutlineBookOpen } from 'react-icons/hi'
 import { HiOutlineCog8Tooth, HiOutlineLockClosed, HiOutlineChatBubbleLeftRight, HiOutlinePencilSquare, HiOutlineCodeBracket, HiOutlineChevronDown, HiOutlineRocketLaunch, } from 'react-icons/hi2'
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
 
 const Home = () => {
   return (
-    <main>
+<main>
 
-      <section className="p-1 flex flex-col justify-center items-center min-h-screen mb-6 sm:mb-0 sm:-mt-6">
+      <section className="p-1 flex flex-col justify-center items-center min-h-screen">
 
-        <div className="flex flex-col lg:flex-row items-center">
-          <img src="./logo.svg" alt="Logo" className="w-48 h-48 md:w-52 md:h-52 lg:w-80 lg:h-80 mb-8" />
+        <div className="flex flex-col lg:flex-row items-center -mt-28 sm:-mt-8 mb-6 sm:mb-0">
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="./logo.svg" alt="Logo" className="w-48 h-48 md:w-52 md:h-52 lg:w-80 lg:h-80 mb-8" />
+          </motion.div>
+
           <h1 className="lg:hidden text-4xl sm:text-[56px] font-bold mb-4">Parch Linux</h1>
-          <div className="flex flex-col gap-8 ml-4 max-w-lg">
+          <div className="flex flex-col gap-8 lg:ml-4 max-w-lg">
             <h1 className="text-center leading-10 text-xl lg:text-left lg:text-[30px]">
               The most advanced <br />
               Arch-Based Distribution
@@ -21,7 +30,7 @@ const Home = () => {
             <div className="flex justify-center lg:justify-start items-center mb-10">
               <Link to={"/get-parch"}>
                 <button
-                  className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 rounded-md text-sm font-semibold hover:bg-blue-600 transition hover:translate-y-1 bg-blue-500/95">
+                  className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-sm font-semibold hover:bg-blue-700 transition hover:translate-y-1 bg-blue-600">
                   DOWNLOAD
                   <HiDownload className="w-5 h-5 ml-2" />
 
@@ -41,7 +50,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='mt-3'>
+        <div className='mt-1'>
           <button className="animate-bounce cursor-default">
             <HiOutlineChevronDown className='w-7 h-7' />
           </button>
