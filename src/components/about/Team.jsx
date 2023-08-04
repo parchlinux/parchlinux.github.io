@@ -16,7 +16,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/behdanisohrab',
             'socials': {
                 'twitter': 'https://twitter.com/sbehdani',
-                'telegram': 'https://t.me/sohrabbehdani',
                 'github': 'https://github.com/behdanisohrab',
                 'mastodon': 'https://mas.to/@sohrabbehdani',
             }
@@ -28,7 +27,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/AFzOfficial',
             'socials': {
                 'twitter': 'https://twitter.com/AFzOfficial',
-                'telegram': 'https://t.me/AFzOfficial',
                 'github': 'https://github.com/AFzOfficial',
             }
         },
@@ -39,7 +37,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/mmdbalkhi',
             'socials': {
                 'twitter': 'https://twitter.com/mmdbalkhi',
-                'telegram': 'https://t.me/mmdbalkhi',
                 'github': 'https://github.com/mmdbalkhi',
             }
         },
@@ -50,7 +47,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/metantesan',
             'socials': {
                 'twitter': 'https://twitter.com/metantesan',
-                'telegram': 'https://t.me/metantesan',
                 'github': 'https://github.com/metantesan',
             }
         },
@@ -61,7 +57,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/Hr-ArshA',
             'socials': {
                 'twitter': 'https://twitter.com/Hr_ArshA',
-                'telegram': 'https://t.me/Hr_ArshA',
                 'github': 'https://github.com/Hr-ArshA',
             }
         },
@@ -72,7 +67,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/shahriaarrr',
             'socials': {
                 'twitter': 'https://twitter.com/shahriaarrr',
-                'telegram': 'https://t.me/shahriaarrr',
                 'github': 'https://github.com/shahriaarrr',
             }
         },
@@ -83,7 +77,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/AEK84',
             'socials': {
                 'twitter': '',
-                'telegram': '',
                 'github': 'https://github.com/AEK84',
             }
         },
@@ -94,7 +87,6 @@ const Team = () => {
             'image': 'https://avatars.githubusercontent.com/ahmadreza3',
             'socials': {
                 'twitter': '',
-                'telegram': '',
                 'github': 'https://github.com/ahmadreza3',
             }
         },
@@ -190,11 +182,6 @@ const Team = () => {
                                     <FaTwitter className='w-6 h-6' />
                                 </a>
 
-                            )}
-                            {users_info[currentUser].socials.telegram && (
-                                <a target='_blank' href={users_info[currentUser].socials.telegram} rel="noopener noreferrer" className='socail-link'>
-                                    <FaTelegramPlane className='w-6 h-6' />
-                                </a>
                             )}
                             {users_info[currentUser].socials.github && (
                                 <a target='_blank' href={users_info[currentUser].socials.github} rel="noopener noreferrer" className='socail-link'>
