@@ -10,7 +10,7 @@ const Privacy = () => {
 
                         Last updated: August 7, 2023 <br /> <br />
 
-                        Parch Linux ("us", "we", or "our") operates the <a href="https://www.parchlinux.ir" className='text-sky-500'>https://www.parchlinux.ir</a> website and related services on a non-profit basis. Parch Linux releases and distributions may originate from the core Parch Linux team or the broader Parch Linux community (the "Service"). <br /><br />
+                        Parch Linux ("us", "we", or "our") operates the <a href="https://parchlinux.ir" className='text-sky-500'>parchlinux.ir</a> website and related services on a non-profit basis. Parch Linux releases and distributions may originate from the core Parch Linux team or the broader Parch Linux community (the "Service"). <br /><br />
 
                         This page informs you of our policies regarding the collection, use and disclosure of information when you use our Service. <br /><br />
 
