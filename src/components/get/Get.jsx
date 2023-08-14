@@ -48,11 +48,11 @@ const Get = () => {
 
               <div className="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-                <a href="https://github.com/parchlinux/parch-iso-xfce/releases/download/2023-07-10.RC.1/Parchlinux.XFCE-2023.07.10-x86_64.iso" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 rounded-bl-lg'>
+                <a href="https://github.com/parchlinux/parch-iso-xfce/releases/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 rounded-bl-lg'>
                   <HiDownload className="w-5 h-5" />
                 </a>
 
-                <a target='_blank' href="https://fosstorrents.com/thankyou/?name=parch-linux&cat=Core%20Editions&id=3&hybrid=0" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px] rounded-br-lg'>
+                <a target='_blank' href="https://fosstorrents.com/distributions/parch-linux/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px] rounded-br-lg'>
                   Torrent
                 </a>
 
@@ -72,11 +72,11 @@ const Get = () => {
 
               <div className="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-                <a href="https://github.com/parchlinux/Parch-iso-gnome/releases/download/2023-06-08.RC.1/Parchlinux.Gnome-2023.06.08-x86_64.iso" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 rounded-bl-lg'>
+                <a href="https://github.com/parchlinux/Parch-iso-gnome/releases/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 rounded-bl-lg'>
                   <HiDownload className="w-5 h-5" />
                 </a>
 
-                <a href="https://fosstorrents.com/thankyou/?name=parch-linux&cat=Core%20Editions&id=1&hybrid=0" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px] rounded-br-lg'>
+                <a href="https://fosstorrents.com/distributions/parch-linux/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px] rounded-br-lg'>
                   Torrent
                 </a>
 
@@ -96,11 +96,11 @@ const Get = () => {
 
               <div className="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-                <a href="https://github.com/parchlinux/parch-iso-plasma/releases/download/2023-06-08.RC.1/Parchlinux.Plasma-2023.06.08-x86_64.iso" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
+                <a href="https://github.com/parchlinux/parch-iso-plasma/releases/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
                   <HiDownload className="w-5 h-5" />
                 </a>
 
-                <a href="https://fosstorrents.com/thankyou/?name=parch-linux&cat=Core%20Editions&id=2&hybrid=0" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
+                <a href="https://fosstorrents.com/distributions/parch-linux/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
                   Torrent
                 </a>
 
@@ -120,11 +120,11 @@ const Get = () => {
 
               <div className="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-                <a href="https://github.com/parchlinux/parch-iso-cinnamon/releases/download/2023-06-08.RC.1/Parchlinux.Cinnamon-2023.06.08-x86_64.iso" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
+                <a href="https://github.com/parchlinux/parch-iso-cinnamon/releases/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
                   <HiDownload className="w-5 h-5" />
                 </a>
 
-                <a href="https://fosstorrents.com/thankyou/?name=parch-linux&cat=Core%20Editions&id=0&hybrid=0" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
+                <a href="https://fosstorrents.com/distributions/parch-linux/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
                   Torrent
                 </a>
 
@@ -144,11 +144,11 @@ const Get = () => {
 
               <div className="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-                <a href="https://github.com/parchlinux/parch-iso-dwm/releases/download/2023-06-14.alpha.6/Parchlinux.Dwm-2023.06.14-x86_64.iso" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
+                <a href="https://github.com/parchlinux/parch-iso-dwm/releases/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
                   <HiDownload className="w-5 h-5" />
                 </a>
 
-                <a href="#" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
+                <a href="https://fosstorrents.com/distributions/parch-linux/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
                   Torrent
                 </a>
 
@@ -168,11 +168,11 @@ const Get = () => {
 
               <div className="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-                <a href="https://github.com/parchlinux/parch-iso-lxqt/releases/download/2023-06-08.alpha.3/Parchlinux.LXQT-2023.06.08-x86_64.iso" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
+                <a href="https://github.com/parchlinux/parch-iso-lxqt/releases/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2'>
                   <HiDownload className="w-5 h-5" />
                 </a>
 
-                <a href="https://fosstorrents.com/thankyou/?name=parch-linux&cat=Community%20Editions&id=1&hybrid=0" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
+                <a href="https://fosstorrents.com/distributions/parch-linux/" className='w-1/2 inline-flex text-sky-500/70 justify-center p-2 text-[15px]'>
                   Torrent
                 </a>
 
