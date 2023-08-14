@@ -15,7 +15,7 @@ const Footer = () => {
           <a href='https://parchlinux.ir/blog/' target='_blank' className='hover:text-sky-500'>
             BLOG
           </a>
-          <a href='https://parchlinux.ir/wiki/' target='_blank' className='hover:text-sky-500'>
+          <a href='https://parchlinux.ir/parchwiki/' target='_blank' className='hover:text-sky-500'>
             WIKI
           </a>
           <Link to={'/about'} className='hover:text-sky-500'>

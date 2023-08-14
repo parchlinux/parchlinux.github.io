@@ -5,7 +5,7 @@ import { HiMiniChevronDown } from 'react-icons/hi2'
 
 const Team = () => {
 
-    const users = ['sohrab', 'komeil', 'arsha', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
+    const users = ['sohrab', 'komeil', 'arsha', 'javid', 'mani', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
 
 
     const users_info = {
@@ -68,6 +68,24 @@ const Team = () => {
             'socials': {
                 'twitter': 'https://twitter.com/shahriaarrr',
                 'github': 'https://github.com/shahriaarrr',
+            }
+        },
+        'mani': {
+            'name': 'Mani Jamali',
+            'stack': 'Core Developer',
+            'about': 'work on Parch development and maintenance.',
+            'image': 'https://avatars.githubusercontent.com/manijamali2003',
+            'socials': {
+                'github': 'https://github.com/manijamali2003',
+            }
+        },
+        'javid': {
+            'name': 'Javid Izadi',
+            'stack': 'Maintainer',
+            'about': 'work on Parch development and maintenance.',
+            'image': 'https://avatars.githubusercontent.com/avidizadi',
+            'socials': {
+                'github': 'https://github.com/avidizadi',
             }
         },
         'ali': {

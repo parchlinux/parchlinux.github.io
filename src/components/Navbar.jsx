@@ -13,10 +13,27 @@ const Navbar = () => {
     closed: { opacity: 0, x: "100%" },
   }
 
+  // const [scrollState, setScrollState] = useState(false);
+
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setScrollState(true)
+  //     } else {
+  //       setScrollState(false)
+  //     }
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  toggleMenu ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"
+
   return (
-    <nav className="w-full h-14 p-10 lg:px-16 flex justify-between items-center">
+    <nav className={`h-14 w-full p-10 lg:px-16 flex justify-between items-center`}>
 
       <Link to={'/'}>
         <div className='border-[3px] rounded-[4px] border-sky-500 p-1 px-2'>
@@ -58,7 +75,7 @@ const Navbar = () => {
       </div>
 
 
-      <div onMouseLeave={() => setToggleMenu(false)} className='sidebar sm:hidden flex justify-end items-center overflow-hidden'>
+      <div onMouseLeave={() => setToggleMenu(false)} className='sidebar overflow-y-auto sm:hidden flex justify-end items-center overflow-hidden'>
         <button onMouseEnter={() => setToggleMenu(true)} onClick={() => setToggleMenu(!toggleMenu)} className='hover:bg-zinc-800 p-1.5 rounded-xl'>
           <HiBars3BottomRight className='w-7 h-7' />
         </button>
