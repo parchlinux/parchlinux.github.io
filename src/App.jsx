@@ -5,14 +5,24 @@ import {
 } from "react-router-dom"
 
 
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import { Fireworks } from '@fireworks-js/react'
 
 import { Home, Navbar, About, Footer, Get, NotFound, Team, Privacy } from './components'
 
 const App = () => {
 
-    const ref = useRef(true)
+    let firework = useRef(null)
+
+    useEffect(() => {
+        firework.current.start()
+
+        setTimeout(() => {
+        firework.current.stop()
+        }, 10000)
+    }, [])
+
+
 
     return (
         <Router>
@@ -29,7 +39,7 @@ const App = () => {
             <Footer />
 
             <Fireworks
-                ref={ref}
+                ref={firework}
                 options={{ opacity: 0.5 }}
                 style={{
                     top: 0,
