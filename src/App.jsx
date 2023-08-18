@@ -4,9 +4,25 @@ import {
     Route,
 } from "react-router-dom"
 
+
+import { useRef, useEffect } from 'react'
+import { Fireworks } from '@fireworks-js/react'
+
 import { Home, Navbar, About, Footer, Get, NotFound, Team, Privacy } from './components'
 
 const App = () => {
+    const firework = useRef(null)
+
+    useEffect(() => {
+
+        firework.current.start()
+
+        setTimeout(() => {
+            firework.current.stop()
+        }, 10000)
+    }, [])
+
+
 
     return (
         <Router>
@@ -21,6 +37,21 @@ const App = () => {
                 <Route path='*' element={<NotFound />} />
             </Routes>
             <Footer />
+
+            <Fireworks
+                ref={firework}
+                options={{ opacity: 0.5 }}
+                style={{
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    position: 'fixed',
+                    background: 'transparent',
+                    zIndex: '-1',
+                }}
+            />
+
         </Router>
     )
 }
