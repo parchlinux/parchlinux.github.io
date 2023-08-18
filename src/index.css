@@ -39,7 +39,3 @@ p {
   @apply border border-zinc-700
 }
 
-
-canvas {
-  display: block;
-}
