@@ -19,6 +19,10 @@
   @apply bg-[#010409] text-white
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 p a {
   @apply text-sky-500
 }
@@ -33,4 +37,9 @@ p {
 
 .sidebar .active {
   @apply border border-zinc-700
+}
+
+
+canvas {
+  display: block;
 }

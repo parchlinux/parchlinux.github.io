@@ -5,7 +5,7 @@ import { HiMiniChevronDown } from 'react-icons/hi2'
 
 const Team = () => {
 
-    const users = ['sohrab', 'komeil', 'arsha', 'javid', 'mani', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
+    const users = ['sohrab', 'komeil', 'javid', 'mani', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
 
 
     const users_info = {
@@ -48,16 +48,6 @@ const Team = () => {
             'socials': {
                 'twitter': 'https://twitter.com/metantesan',
                 'github': 'https://github.com/metantesan',
-            }
-        },
-        'arsha': {
-            'name': 'Arsha',
-            'stack': 'maintainer',
-            'about': 'work on Parch development and maintenance.',
-            'image': 'https://avatars.githubusercontent.com/Hr-ArshA',
-            'socials': {
-                'twitter': 'https://twitter.com/Hr_ArshA',
-                'github': 'https://github.com/Hr-ArshA',
             }
         },
         'shahriar': {
