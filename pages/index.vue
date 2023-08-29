@@ -1,11 +1,12 @@
 <template>
     <div class="max-w-screen-lg mx-auto p-4 min-h-screen">
         <div class="flex flex-col justify-center items-center mt-12">
-            <img src="/img/logo.svg" class="w-52 h-52 mb-8">
+            <img src="/img/logo.svg" class="w-52 h-52 mb-2">
             <h1
-                class="mb-2 text-[36px] sm:text-[45px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-600">
-                Parch Linux</h1>
-            <p class="text-base max-w-lg text-center mb-10">Parch Linux is an
+                class="text-[36px] sm:text-[45px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-sky-600">
+                Parch Linux
+            </h1>
+            <p class="px-3 text-sm max-w-lg text-center mb-8">Parch Linux is an
                 open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.
             </p>
 
@@ -92,7 +93,6 @@
 
     <div class="max-w-screen-lg mx-auto p-4 min-h-[200px]">
     </div>
-
 </template>
 
 <script setup>
