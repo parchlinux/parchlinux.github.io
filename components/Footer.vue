@@ -17,31 +17,31 @@
                 <span class="text-xs text-gray-300">© BSS OSF - All Rights Reserved.</span>
 
 
-                <div class="text-sm text-gray-300">
+                <div class="text-sm font-medium text-gray-300">
                     <ul class="gap-6 flex flex-wrap">
                         <li>
                             <NuxtLink to="/" class="hover:text-blue-600">
-                                Home
+                                HOME
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/download" class="hover:text-blue-600">
-                                Download
+                                DOWNLOAD
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/about" class="hover:text-blue-600">
-                                About
+                                ABOUT
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/privacy" class="hover:text-blue-600">
-                                Privacy
+                                PRIVACY
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/team" class="hover:text-blue-600">
-                                Team
+                                TEAM
                             </NuxtLink>
                         </li>
                     </ul>
