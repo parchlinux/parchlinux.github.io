@@ -28,14 +28,14 @@
             </li>
 
             <li>
-                <a href="https://parchlinux.ir/blog/" @click="menuToggle = false"
+                <a href="https://blog.parchlinux.ir" @click="menuToggle = false"
                     class="flex items-center px-2 py-2.5 hover:bg-blue-500 rounded-xl hover:text-white">
                     <span class="flex-1 ml-3 whitespace-nowrap">BLOG</span>
                 </a>
             </li>
 
             <li>
-                <a href="https://parchlinux.ir/parchwiki/" @click="menuToggle = false"
+                <a href="https://blog.parchlinux.ir" @click="menuToggle = false"
                     class="flex items-center px-2 py-2.5 hover:bg-blue-500 rounded-xl hover:text-white">
                     <span class="flex-1 ml-3 whitespace-nowrap">WIKI</span>
                 </a>
