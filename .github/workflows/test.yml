@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Test
 
 on:
   push:
@@ -22,10 +22,3 @@ jobs:
           node-version: 'latest'
       - run: npm i
       - run: npm run build
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          cname: parchlinux.ir
