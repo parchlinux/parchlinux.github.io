@@ -11,14 +11,14 @@
 
         <div class="max-w-screen-lg mx-auto py-8">
 
-            <div class="sm:relative flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+            <div class="sm:relative flex flex-col items-center gap-3 lg:flex-row sm:justify-between">
 
 
                 <span class="text-xs text-gray-300">© BSS OSF - All Rights Reserved.</span>
 
 
-                <div class="text-sm font-medium text-gray-300">
-                    <ul class="gap-6 flex flex-wrap">
+                <div class="text-sm font-medium text-gray-300 px-4">
+                    <ul class="gap-6 flex flex-wrap justify-center">
                         <li>
                             <NuxtLink to="/" class="hover:text-blue-600">
                                 HOME
