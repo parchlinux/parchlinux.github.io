@@ -10,6 +10,7 @@
                 open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.
             </p>
 
+	<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
             <NuxtLink to="/download">
                 <button
                     class="font-medium inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-700 px-6 py-2 rounded-xl hover:translate-y-2 transition">
@@ -17,6 +18,15 @@
                     <Icon name="iconoir:download" class="w-6 h-6 text-white ml-2" />
                 </button>
             </NuxtLink>
+            <a href="https://coffeete.ir/parchlinux">
+                <button
+                    class="font-medium inline-flex items-center justify-center border-zinc-900 border px-6 py-2 rounded-xl hover:translate-y-2 transition">
+                    Donate
+                    <Icon name="fluent-mdl2:coffee-script" class="w-6 h-6 text-white ml-2" />
+                </button>
+            </a>
+	</div>
+
         </div>
     </div>
 
