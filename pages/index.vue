@@ -18,7 +18,7 @@
                     <Icon name="iconoir:download" class="w-6 h-6 text-white ml-2" />
                 </button>
             </NuxtLink>
-            <a href="https://coffeete.ir/parchlinux">
+            <a href="https://daramet.com/parchlinux">
                 <button
                     class="font-medium inline-flex items-center justify-center border-zinc-900 border px-6 py-2 rounded-xl hover:translate-y-2 transition">
                     Donate
