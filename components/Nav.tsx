@@ -20,16 +20,16 @@ export default function Nav(props: propstype) {
       </div>
       <div className="hidden md:block">
         <nav className="flex justify-center items-center gap-4 text-2xl">
-          <Link href={""} className="hover:text-[#035cae]">
+          <Link href={props.Lang == "Fa" ? "/fa" : "/"} className="hover:text-[#035cae]">
             {props.Lang === "Fa" ? data.Fa.home : data.En.home}
           </Link>
           <Link href={"/download"} className="hover:text-[#035cae]">
             {props.Lang === "Fa" ? data.Fa.download : data.En.download}
           </Link>
-          <Link href={"https://www.blog.parchlinux.ir"} className="hover:text-[#035cae]">
+          <Link href={"https://blog.parchlinux.ir/"} className="hover:text-[#035cae]">
             {props.Lang === "Fa" ? data.Fa.blog : data.En.blog}
           </Link>
-          <Link href={"https://www.wiki.parchlinux.ir"} className="hover:text-[#035cae]">
+          <Link href={"https://wiki.parchlinux.ir/"} className="hover:text-[#035cae]">
             {props.Lang === "Fa" ? data.Fa.document : data.En.document}
           </Link>
           <Link href={"#about"} className="hover:text-[#035cae]">

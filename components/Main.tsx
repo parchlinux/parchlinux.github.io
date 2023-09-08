@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import data from "@/Data/data.json";
 
 interface propstype {
@@ -28,12 +29,16 @@ export default function Main(props: propstype) {
             {props.Lang === "Fa" ? data.Fa.ParchOS : data.En.ParchOS}
           </p>
           <div className="flex justify-center items-center gap-4 mt-10">
-            <button className="rounded-lg bg-gradient-to-r from-blue-500 to-indigo-700 text-lg px-10 py-3 font-bold">
-              {props.Lang === "Fa" ? data.Fa.download : data.En.download}
-            </button>
-            <button className="rounded-lg bg-gradient-to-t from-amber-700 to-orange-400 text-lg px-7 py-3 font-bold">
-              {props.Lang === "Fa" ? data.Fa.getStarted : data.En.getStarted}
-            </button>
+            <Link href={"/download"}>
+              <button className="rounded-lg bg-gradient-to-r from-blue-500 to-indigo-700 text-lg px-10 py-3 font-bold">
+                {props.Lang === "Fa" ? data.Fa.download : data.En.download}
+              </button>
+            </Link>
+            <Link href={"https://wiki.parchlinux.ir/"}>
+              <button className="rounded-lg bg-gradient-to-t from-amber-700 to-orange-400 text-lg px-7 py-3 font-bold">
+                {props.Lang === "Fa" ? data.Fa.getStarted : data.En.getStarted}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
