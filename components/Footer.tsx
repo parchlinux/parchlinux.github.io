@@ -1,8 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import data from "@/Data/data.json";
 
-export default function Footer() {
+interface propstype {
+  Lang: string,
+}
+
+export default function Footer(props: propstype) {
   const [isLangOpen, setIsLangOpen] = useState(false);
   return (
     <footer className="mt-auto">
@@ -38,7 +43,9 @@ export default function Footer() {
             className="css-c4d79v"
           ></path>
         </svg>
-        <p className="text-lg">English</p>
+        <p className="text-lg">
+          {props.Lang === "Fa" ? data.Fa.Lang : data.En.Lang}
+        </p>
       </button>
 
       <div className="border-y-2 border-y-slate-100 py-4 mx-5 md:mx-3 flex justify-center md:justify-start items-center">
@@ -140,7 +147,7 @@ export default function Footer() {
           />
         </svg>
         <p className="text-2xl mb-2 mx-5 hidden md:block">
-          Parch in social media
+          {props.Lang === "Fa" ? data.Fa.social : data.En.social}
         </p>
       </div>
 

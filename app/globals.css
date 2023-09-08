@@ -6,6 +6,10 @@
   font-family: yekanBakh;
   src: url(../public/fonts/YekanBakh.ttf);
 }
+@font-face {
+  font-family: vazir;
+  src: url(../public/fonts/Vazir.ttf);
+}
 
 @font-face {
   font-family: LilitaOne;
@@ -13,10 +17,10 @@
 }
 
 .font-yekanBakh {
-  font-family: yekanBakh;
+  font-family: vazir;
 }
 
-* {
+.font-LilitaOne {
   font-family: LilitaOne;
 }
 

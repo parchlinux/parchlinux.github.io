@@ -1,6 +1,11 @@
 import Image from "next/image";
+import data from "@/Data/data.json";
 
-export default function Main() {
+interface propstype {
+  Lang: string,
+}
+
+export default function Main(props: propstype) {
   return (
     <main className="flex justify-center items-center">
       <div className="relative flex flex-col md:flex-row justify-between items-center mt-[12vh]">
@@ -19,13 +24,15 @@ export default function Main() {
           className="z-40"
         />
         <div>
-          <p className="text-8xl hidden md:block">Parch OS</p>
+          <p className="text-8xl hidden md:block">
+            {props.Lang === "Fa" ? data.Fa.ParchOS : data.En.ParchOS}
+          </p>
           <div className="flex justify-center items-center gap-4 mt-10">
-            <button className="rounded-lg bg-gradient-to-r from-blue-500 to-indigo-700 text-lg px-5 py-2">
-              Download
+            <button className="rounded-lg bg-gradient-to-r from-blue-500 to-indigo-700 text-lg px-10 py-3 font-bold">
+              {props.Lang === "Fa" ? data.Fa.download : data.En.download}
             </button>
-            <button className="rounded-lg bg-gradient-to-t from-amber-700 to-orange-400 text-lg px-5 py-2">
-              Get Started
+            <button className="rounded-lg bg-gradient-to-t from-amber-700 to-orange-400 text-lg px-7 py-3 font-bold">
+              {props.Lang === "Fa" ? data.Fa.getStarted : data.En.getStarted}
             </button>
           </div>
         </div>

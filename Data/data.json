@@ -1,0 +1,24 @@
+{
+  "Fa": {
+    "Lang": "فارسی",
+    "home": "خانه",
+    "download": "دانلود",
+    "blog": "وبلاگ",
+    "document": "اسناد",
+    "about": "درباره",
+    "getStarted": "شروع کنید",
+    "social": "پارچ در شبکه های اجتماعی",
+    "ParchOS": "پــــــــــارچ"
+  },
+  "En": {
+    "Lang": "English",
+    "home": "Home",
+    "download": "Download",
+    "blog": "Blog",
+    "document": "Document",
+    "about": "About",
+    "getStarted": "Get Started",
+    "social": "Parch in social media",
+    "ParchOS": "Parch OS"
+  }
+}
