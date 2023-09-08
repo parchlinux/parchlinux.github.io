@@ -36,7 +36,7 @@ export default function Ability(props: propstype) {
         <SwiperSlide>
           {props.Lang == "Fa" ?
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -80,13 +80,13 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">ساده</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 نصب ساده با نصاب گرافیکی و برنامه های مورد نیاز.
               </p>
             </div> :
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -130,7 +130,7 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">Simple</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 Parch linux uses calamares graphical installer by default which
                 makes it easier for you to install and use it.
@@ -140,7 +140,7 @@ export default function Ability(props: propstype) {
         <SwiperSlide>
           {props.Lang === "Fa" ?
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -169,13 +169,13 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">حریم خصوصی</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 پارچ لینوکس برای حریم خصوصی کاربران احترام قائل است و هیچ اطلاعاتی از کاربران خود را ذخیره نمیکند.
               </p>
             </div> :
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -204,7 +204,7 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">Privacy</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 Unlike any other proprietary operating systems, Parch Linux
                 respects your privacy and doesn't collect any information or data
@@ -215,7 +215,7 @@ export default function Ability(props: propstype) {
         <SwiperSlide>
           {props.Lang === "Fa" ?
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -287,13 +287,13 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">سرعت</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 پارچ لینوکس در دسکتاپ XFCE 1.5GB  رم مصرف میکند و در دسکتاپ LXQT 1GB با پارچ لینوکس میتوانید یک شانس دوباره به کامپیوتر قدیمی خود بدهید.
               </p>
             </div> :
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -365,7 +365,7 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">Fast</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 Parch Linux requires at least 1.5 GB of RAM with xfce desktop and
                 at least 1 GB with lxqt desktop Give your old system a second
@@ -377,7 +377,7 @@ export default function Ability(props: propstype) {
         <SwiperSlide>
           {props.Lang === "Fa" ?
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -406,7 +406,7 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">اجتماع کاربران</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 پارچ لینوکس در
                 {" "}
@@ -419,7 +419,7 @@ export default function Ability(props: propstype) {
               </p>
             </div> :
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg
                   width="50"
                   height="50"
@@ -448,7 +448,7 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">Community</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 Parch Linux in{" "}
                 <a
@@ -468,7 +468,7 @@ export default function Ability(props: propstype) {
         <SwiperSlide>
           {props.Lang === "Fa" ?
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg width="60" height="60" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_b_273_3991)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.183 13.5369C10 17.918 10 24.1676 10 36.6667V43.3334C10 55.8325 10 62.082 13.183 66.4631C14.211 67.878 15.4553 69.1223 16.8702 70.1503C21.2513 73.3334 27.5009 73.3334 40 73.3334C52.4991 73.3334 58.7487 73.3334 63.1298 70.1503C64.5447 69.1223 65.789 67.878 66.817 66.4631C70 62.082 70 55.8325 70 43.3334V36.6667C70 24.1676 70 17.918 66.817 13.5369C65.789 12.122 64.5447 10.8777 63.1298 9.84974C58.7487 6.66669 52.4991 6.66669 40 6.66669C27.5009 6.66669 21.2513 6.66669 16.8702 9.84974C15.4553 10.8777 14.211 12.122 13.183 13.5369Z" fill="url(#paint0_linear_273_3991)" />
@@ -508,13 +508,13 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">متن باز</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 پارچ لینوکس و تمام ابزار های آن کاملا متن باز است.
               </p>
             </div> :
             <div className="h-60 w-72 md:h-72 md:w-96 bg-[#f4f5f7] text-black rounded-2xl flex flex-col justify-center items-start p-4 gap-3">
-              <span className="flex justify-start items-center gap-2">
+              <div className="flex justify-start items-center gap-2">
                 <svg width="60" height="60" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_b_273_3991)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.183 13.5369C10 17.918 10 24.1676 10 36.6667V43.3334C10 55.8325 10 62.082 13.183 66.4631C14.211 67.878 15.4553 69.1223 16.8702 70.1503C21.2513 73.3334 27.5009 73.3334 40 73.3334C52.4991 73.3334 58.7487 73.3334 63.1298 70.1503C64.5447 69.1223 65.789 67.878 66.817 66.4631C70 62.082 70 55.8325 70 43.3334V36.6667C70 24.1676 70 17.918 66.817 13.5369C65.789 12.122 64.5447 10.8777 63.1298 9.84974C58.7487 6.66669 52.4991 6.66669 40 6.66669C27.5009 6.66669 21.2513 6.66669 16.8702 9.84974C15.4553 10.8777 14.211 12.122 13.183 13.5369Z" fill="url(#paint0_linear_273_3991)" />
@@ -554,7 +554,7 @@ export default function Ability(props: propstype) {
                   </defs>
                 </svg>
                 <p className="text-2xl md:text-4xl">Open Source</p>
-              </span>
+              </div>
               <p className="text-xl md:text-2xl">
                 Parch Linux and all its tools are completely open source.
               </p>
