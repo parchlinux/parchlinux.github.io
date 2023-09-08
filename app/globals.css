@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: yekanBakh;
-  src: url(../public/fonts/YekanBakh.ttf);
-}
-@font-face {
   font-family: vazir;
   src: url(../public/fonts/Vazir.ttf);
 }
@@ -16,7 +12,7 @@
   src: url(../public/fonts/LilitaOne-Regular.ttf);
 }
 
-.font-yekanBakh {
+.font-vazir {
   font-family: vazir;
 }
 
