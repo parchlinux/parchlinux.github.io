@@ -30,12 +30,12 @@ export default function Main(props: propstype) {
           </p>
           <div className="flex justify-center items-center gap-4 mt-10">
             <Link href={"/download"}>
-              <button className="rounded-lg bg-gradient-to-r from-blue-500 to-indigo-700 text-lg px-10 py-3 font-bold">
+              <button className="rounded-lg bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-xl px-10 py-3 hover:ring-8 ring-blue-300 cursor-pointer">
                 {props.Lang === "Fa" ? data.Fa.download : data.En.download}
               </button>
             </Link>
             <Link href={"https://wiki.parchlinux.ir/"}>
-              <button className="rounded-lg bg-gradient-to-t from-amber-700 to-orange-400 text-lg px-7 py-3 font-bold">
+              <button className="rounded-lg bg-gradient-to-r from-[#e55026] to-[#eeb200] text-xl px-7 py-3 hover:ring-8 ring-rose-300 cursor-pointer">
                 {props.Lang === "Fa" ? data.Fa.getStarted : data.En.getStarted}
               </button>
             </Link>
