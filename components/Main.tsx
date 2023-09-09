@@ -15,14 +15,14 @@ export default function Main(props: propstype) {
           width={9999}
           src={"/images/grid.webp"}
           alt="grid"
-          className="absolute top-2"
+          className="absolute top-2 z-10"
         />
         <Image
           height={750}
           width={750}
           src={"/images/notebook.webp"}
           alt="notebook"
-          className="z-40"
+          className="z-20"
         />
         <div>
           <p className="text-8xl hidden md:block">

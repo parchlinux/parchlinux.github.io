@@ -14,7 +14,7 @@ export default function Footer(props: propstype) {
       {isLangOpen && (
         <ul className="h-28 w-36 grid place-items-center bg-slate-100 text-black rounded-3xl mx-2 relative">
           <li>
-            <Link className="font-yekanBakh" href={"/fa"}>
+            <Link className="font-vazir" href={"/fa"}>
               فارسی
             </Link>
           </li>
