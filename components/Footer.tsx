@@ -152,7 +152,7 @@ export default function Footer(props: propstype) {
       </div>
 
       <p className="text-xl text-center my-3">
-        Copyright-© {new Date().getFullYear()}
+        {new Date().getFullYear()} BSS OSF
       </p>
     </footer>
   );
