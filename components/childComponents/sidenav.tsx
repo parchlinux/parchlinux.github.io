@@ -65,6 +65,9 @@ export default function Sidenav(props: propstype) {
                     <Link href={"#about"} className="hover:text-[#035cae]">
                         {props.Lang === "Fa" ? data.Fa.about : data.En.about}
                     </Link>
+                    <a href="https://daramet.com/parchlinux" className="hover:text-[#035cae]">
+                        {props.Lang === "Fa" ? data.Fa.donate : data.En.donate}
+                    </a>
                 </nav>
                 <button
                     onClick={() => setIsLangOpen(!isLangOpen)}
