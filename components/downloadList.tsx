@@ -86,7 +86,7 @@ export default function DownloadList(props: propstype) {
                     src={"/images/XFCE.webp"}
                     className="rounded-lg"
                 />
-                <div className="flex flex-col justify-center items-start">
+                <div className="flex flex-col justify-center items-start my-4">
                     <p className="text-2xl md:text-4xl">Parch XFCE</p>
                     <p className="text-xl md:text-2xl">1.5GB</p>
                 </div>
