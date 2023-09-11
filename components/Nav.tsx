@@ -28,7 +28,7 @@ export default function Nav(props: propstype) {
           <Link href={props.Lang == "Fa" ? "/fa" : "/"} className="hover:text-[#035cae]">
             {props.Lang === "Fa" ? data.Fa.home : data.En.home}
           </Link>
-          <Link href={"/download"} className="hover:text-[#035cae]">
+          <Link href={props.Lang === "Fa" ? "/fa/download" : "/download"} className="hover:text-[#035cae]">
             {props.Lang === "Fa" ? data.Fa.download : data.En.download}
           </Link>
           <Link href={"https://blog.parchlinux.ir/"} className="hover:text-[#035cae]">

@@ -29,7 +29,7 @@ export default function Main(props: propstype) {
             {props.Lang === "Fa" ? data.Fa.ParchOS : data.En.ParchOS}
           </p>
           <div className="flex justify-center items-center gap-4 mt-10">
-            <Link href={"/download"}>
+            <Link href={props.Lang === "Fa" ? "/fa/download" : "/download"}>
               <button className="rounded-lg bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-xl px-10 py-3 hover:ring-8 ring-blue-300 cursor-pointer truncate">
                 {props.Lang === "Fa" ? data.Fa.download : data.En.download}
               </button>

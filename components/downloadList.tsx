@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import data from "@/Data/data.json";
 
-export default function DownloadList() {
+interface propstype {
+    Lang: string,
+}
+
+export default function DownloadList(props: propstype) {
     return (
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center my-10 gap-7 overflow-hidden">
             <li className="h-96 w-80 rounded-3xl bg-slate-100 text-black text-center py-10 px-5">
@@ -23,8 +28,8 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#e55026] to-[#eeb200] text-white text-xl px-6 py-3 rounded-lg hover:ring-8 ring-rose-300">
-                            Download
+                        <button className="rounded-lg bg-gradient-to-r from-[#e55026] to-[#eeb200] text-xl px-7 py-3 hover:ring-8 ring-rose-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.download : data.En.download}
                         </button>
                     </Link>
                     <Link
@@ -32,7 +37,9 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-white text-xl px-7 py-3 rounded-lg hover:ring-8 ring-blue-200">Torrent</button>
+                        <button className="rounded-lg bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-xl px-10 py-3 hover:ring-8 ring-blue-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.Torrent : data.En.Torrent}
+                        </button>
                     </Link>
                 </div>
             </li>
@@ -55,8 +62,8 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#e55026] to-[#eeb200] text-white text-xl px-6 py-3 rounded-lg hover:ring-8 ring-rose-300">
-                            Download
+                        <button className="rounded-lg bg-gradient-to-r from-[#e55026] to-[#eeb200] text-xl px-7 py-3 hover:ring-8 ring-rose-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.download : data.En.download}
                         </button>
                     </Link>
                     <Link
@@ -64,7 +71,9 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-white text-xl px-7 py-3 rounded-lg hover:ring-8 ring-blue-200">Torrent</button>
+                        <button className="rounded-lg bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-xl px-10 py-3 hover:ring-8 ring-blue-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.Torrent : data.En.Torrent}
+                        </button>
                     </Link>
                 </div>
             </li>
@@ -87,8 +96,8 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#e55026] to-[#eeb200] text-white text-xl px-6 py-3 rounded-lg hover:ring-8 ring-rose-300">
-                            Download
+                        <button className="rounded-lg bg-gradient-to-r from-[#e55026] to-[#eeb200] text-xl px-7 py-3 hover:ring-8 ring-rose-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.download : data.En.download}
                         </button>
                     </Link>
                     <Link
@@ -96,7 +105,9 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-white text-xl px-7 py-3 rounded-lg hover:ring-8 ring-blue-200">Torrent</button>
+                        <button className="rounded-lg bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-xl px-10 py-3 hover:ring-8 ring-blue-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.Torrent : data.En.Torrent}
+                        </button>
                     </Link>
                 </div>
             </li>
@@ -110,7 +121,7 @@ export default function DownloadList() {
                     className="rounded-lg"
                 />
                 <div className="flex flex-col justify-center items-start my-4">
-                    <p className="text-2xl md:text-4xl">Parch CINNAMON</p>
+                    <p className="text-xl md:text-3xl">Parch CINNAMON</p>
                     <p className="text-xl md:text-2xl">1.5GB</p>
                 </div>
                 <div className="flex justify-center items-center gap-4 my-4">
@@ -119,8 +130,8 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#e55026] to-[#eeb200] text-white text-xl px-6 py-3 rounded-lg hover:ring-8 ring-rose-300">
-                            Download
+                        <button className="rounded-lg bg-gradient-to-r from-[#e55026] to-[#eeb200] text-xl px-7 py-3 hover:ring-8 ring-rose-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.download : data.En.download}
                         </button>
                     </Link>
                     <Link
@@ -128,7 +139,9 @@ export default function DownloadList() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-white text-xl px-7 py-3 rounded-lg hover:ring-8 ring-blue-200">Torrent</button>
+                        <button className="rounded-lg bg-gradient-to-r from-[#0020ee] to-[#1084f2] text-xl px-10 py-3 hover:ring-8 ring-blue-300 cursor-pointer truncate text-white">
+                            {props.Lang === "Fa" ? data.Fa.Torrent : data.En.Torrent}
+                        </button>
                     </Link>
                 </div>
             </li>
