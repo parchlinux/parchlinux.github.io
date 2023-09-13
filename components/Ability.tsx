@@ -207,7 +207,7 @@ export default function Ability(props: propstype) {
               </div>
               <p className="text-xl md:text-2xl">
                 Unlike any other proprietary operating systems, Parch Linux
-                respects your privacy and doesn't collect any information or data
+                respects your privacy and doesn\'t collect any information or data
                 from you.
               </p>
             </div>}

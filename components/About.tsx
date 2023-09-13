@@ -35,7 +35,7 @@ export default function About(props: propstype) {
           <br />
           <p className="text-xl md:text-2xl leading-10">
             At the beginning of our work, we planned to make Parch a platform for
-            Persian-speaking users, that's why we named it Parch ( Persian Arch ).
+            Persian-speaking users, that\'s why we named it Parch ( Persian Arch ).
             But now we have more comprehensive goals than before.
           </p>
         </div>
