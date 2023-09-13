@@ -3,6 +3,12 @@ import Main from "@/components/Main";
 import About from "@/components/About";
 import Ability from "@/components/Ability";
 import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'پارچ',
+    description: 'سیستم عامل پارچ لینوکس',
+}
 
 export default function page() {
     return (
