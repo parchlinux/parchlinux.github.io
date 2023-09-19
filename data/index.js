@@ -21,7 +21,7 @@ export const usersInfo = {
         'socials': {
             'twitter': 'https://twitter.com/AFzOfficial',
             'github': 'https://github.com/AFzOfficial',
-            'mastodon': 'https://mas.to/@abolfazl',
+            'mastodon': 'https://khiar.net/@abolfazl',
         }
     },
     'komeil': {
@@ -71,7 +71,7 @@ export const usersInfo = {
         'image': 'https://avatars.githubusercontent.com/javidizadi',
         'socials': {
             'github': 'https://github.com/javidizadi',
-            'mastodon': 'https://mas.to/@alen_j05',
+            'mastodon': 'https://khiar.net/@alen_j05',
         }
     },
     'ali': {
