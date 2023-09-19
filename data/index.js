@@ -21,6 +21,7 @@ export const usersInfo = {
         'socials': {
             'twitter': 'https://twitter.com/AFzOfficial',
             'github': 'https://github.com/AFzOfficial',
+            'mastodon': 'https://mas.to/@abolfazl',
         }
     },
     'komeil': {
@@ -31,6 +32,7 @@ export const usersInfo = {
         'socials': {
             'twitter': 'https://twitter.com/mmdbalkhi',
             'github': 'https://github.com/mmdbalkhi',
+            'mastodon': 'https://mas.to/@mmdbalkhi',
         }
     },
     'parsa': {
@@ -40,6 +42,7 @@ export const usersInfo = {
         'image': 'https://avatars.githubusercontent.com/metantesan',
         'socials': {
             'github': 'https://github.com/metantesan',
+            'mastodon': 'https://mas.to/@metantesan',
         }
     },
     'shahriar': {
@@ -68,6 +71,7 @@ export const usersInfo = {
         'image': 'https://avatars.githubusercontent.com/javidizadi',
         'socials': {
             'github': 'https://github.com/javidizadi',
+            'mastodon': 'https://mas.to/@alen_j05',
         }
     },
     'ali': {
