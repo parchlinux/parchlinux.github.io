@@ -1,0 +1,49 @@
+{
+  "Index": {
+    "Lang": "English",
+    "home": "Home",
+    "download": "Download",
+    "blog": "Blog",
+    "document": "Document",
+    "about": "About",
+    "getStarted": "Get Started",
+    "social": "Parch in social media",
+    "ParchOS": "Parch OS",
+    "Torrent": "Torrent",
+    "donate": "Donate",
+    "team": "Team",
+
+    "SOHRAB": "SOHRAB BEHDANI",
+    "KOMEIL": "KOMEIL PARSEH",
+    "JAVID": "JAVID IZADI",
+    "MANI": "MANI JAMALI",
+    "PARSA": "PARSA SEDIGHI",
+    "SHAHRIAR": "SHAHRIAR GHASEM POOR",
+    "ABOLFAZL": "ABOLFAZL BADIE",
+    "AliMohammad": "Ali Mohammad Esmaeeli",
+    "AHMADREZA": "AHMADREZA KHATAMIAN",
+    "ALI": "ALI EMAMI",
+
+    "FOUNDER": "FOUNDER",
+    "MAINTAINER": "MAINTAINER",
+    "COREDEVELOPER": "CORE DEVELOPER",
+    "WEBDEVELOPER": "WEB DEVELOPER",
+    "DESIGNER": "DESIGNER",
+
+    "WhatIs": "What is Parch Linux?",
+    "WhatIsExpanded": "The Parch Linux is a Linux distro based on Arch, that tried to be \n pretty, easy to use, light, fast and stable.",
+    "WhyCall": "Why do we call this Parch?",
+    "WhyCallExpanded": "At the beginning of our work, we planned to make Parch a platform for \n Persian-speaking users, that's why we named it Parch ( Persian Arch ).\n But now we have more comprehensive goals than before.\n",
+
+    "Simple": "Simple",
+    "SimpleExpanded": "Parch linux uses calamares graphical installer by default which \n makes it easier for you to install and use it.",
+    "Privacy": "Privacy",
+    "PrivacyExpanded": "Unlike any other proprietary operating systems, Parch Linux \n respects your privacy and doesn't collect any information or data \n from you. \n",
+    "Fast": "Fast",
+    "FastExpanded": "Parch Linux requires at least 1.5 GB of RAM with xfce desktop and \n at least 1 GB with lxqt \n desktop Give your old system a second chance with Parch Linux.",
+    "Community": "Community",
+    "CommunityExpanded": "Parch Linux in Telegram \n has an active community that will quickly solve your problems. If you have a bug or problem, you can report it in the community.",
+    "OpenSource": "Open Source",
+    "OpenSourceExpanded": " Parch Linux and all its tools are completely open source."
+  }
+}

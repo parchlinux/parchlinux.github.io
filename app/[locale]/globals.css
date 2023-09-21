@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: vazir;
-  src: url(../public/fonts/Vazir.ttf);
+  src: url(../../public/fonts/Vazir.ttf);
 }
 
 @font-face {
   font-family: LilitaOne;
-  src: url(../public/fonts/LilitaOne-Regular.ttf);
+  src: url(../../public/fonts/LilitaOne-Regular.ttf);
 }
 
 .font-vazir {

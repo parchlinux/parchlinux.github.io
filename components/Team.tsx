@@ -1,20 +1,17 @@
 import Image from 'next/image';
-import data from "@/Data/data.json";
+import { useTranslations } from 'next-intl';
 
-interface propstype {
-    Lang: string,
-}
-
-export default function Team(props: propstype) {
+export default function Team() {
+    const t = useTranslations('Index');
     return (
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center my-10 gap-7 overflow-hidden">
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`} >
+                <div className="flex flex-col justify-center items-center md:items-end gap-2" >
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.SOHRAB : data.En.SOHRAB}
+                        {t('SOHRAB')}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.FOUNDER : data.En.FOUNDER}
+                        {t("FOUNDER")}
                     </p>
                 </div>
                 <Image
@@ -74,12 +71,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.KOMEIL : data.En.KOMEIL}
+                        {t("KOMEIL")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.FOUNDER : data.En.FOUNDER}
+                        {t("FOUNDER")}
                     </p>
                 </div>
                 <Image
@@ -124,12 +121,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.JAVID : data.En.JAVID}
+                        {t("JAVID")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.MAINTAINER : data.En.MAINTAINER}
+                        {t("MAINTAINER")}
                     </p>
                 </div>
                 <Image
@@ -159,12 +156,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.MANI : data.En.MANI}
+                        {t("MANI")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.COREDEVELOPER : data.En.COREDEVELOPER}
+                        {t("COREDEVELOPER")}
                     </p>
                 </div>
                 <Image
@@ -194,12 +191,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.PARSA : data.En.PARSA}
+                        {t("PARSA")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.MAINTAINER : data.En.MAINTAINER}
+                        {t("MAINTAINER")}
                     </p>
                 </div>
                 <Image
@@ -229,12 +226,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.SHAHRIAR : data.En.SHAHRIAR}
+                        {t("SHAHRIAR")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.MAINTAINER : data.En.MAINTAINER}
+                        {t("MAINTAINER")}
                     </p>
                 </div>
                 <Image
@@ -279,12 +276,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.ABOLFAZL : data.En.ABOLFAZL}
+                        {t("ABOLFAZL")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.WEBDEVELOPER : data.En.WEBDEVELOPER}
+                        {t("WEBDEVELOPER")}
                     </p>
                 </div>
                 <Image
@@ -329,12 +326,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.AliMohammad : data.En.AliMohammad}
+                        {t("AliMohammad")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.WEBDEVELOPER : data.En.WEBDEVELOPER}
+                        {t("WEBDEVELOPER")}
                     </p>
                 </div>
                 <Image
@@ -393,12 +390,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.AHMADREZA : data.En.AHMADREZA}
+                        {t("AHMADREZA")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.DESIGNER : data.En.DESIGNER}
+                        {t("DESIGNER")}
                     </p>
                 </div>
                 <Image
@@ -428,12 +425,12 @@ export default function Team(props: propstype) {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className={`flex flex-col justify-center items-center ${props.Lang === "Fa" ? "md:items-end" : "md:items-start"} gap-2`}>
+                <div className="flex flex-col justify-center items-center md:items-end gap-2">
                     <p className="text-xl md:text-3xl truncate">
-                        {props.Lang === "Fa" ? data.Fa.ALI : data.En.ALI}
+                        {t("ALI")}
                     </p>
                     <p className="text-lg md:text-2xl">
-                        {props.Lang === "Fa" ? data.Fa.DESIGNER : data.En.DESIGNER}
+                        {t("DESIGNER")}
                     </p>
                 </div>
                 <Image

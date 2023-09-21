@@ -2,6 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import { useLocale, useMessages } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,13 +13,18 @@ export const metadata: Metadata = {
   description: 'Parch Linux os',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
+export default function RootLayout({ children, params }: {
+  children: React.ReactNode, params: { locale: string }
 }) {
+  const locale = useLocale();
+  const messages = useMessages();
+
+  // Validate that the incoming `locale` parameter is a valid locale
+  if (params.locale !== locale) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang={locale}>
       <Head>
         {/* HTML Meta Tags  */}
         <title>Parch Linux</title>
@@ -37,7 +45,11 @@ export default function RootLayout({
         <meta name="twitter:description" content="Parch Linux is an open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable." />
         <meta name="twitter:image" content="/logo.png" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   )
 }

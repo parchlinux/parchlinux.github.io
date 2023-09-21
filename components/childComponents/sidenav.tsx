@@ -1,13 +1,10 @@
 "use client"
-import data from "@/Data/data.json";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
-interface propstype {
-    Lang: string,
-}
-
-export default function Sidenav(props: propstype) {
+export default function Sidenav() {
+    const t = useTranslations('Index');
     const [isLangOpen, setIsLangOpen] = useState(false);
     return (
         <div className="block md:hidden">
@@ -50,26 +47,26 @@ export default function Sidenav(props: propstype) {
                     </svg>
                 </a>
                 <nav className="flex flex-col justify-center items-start gap-4 text-2xl mx-3">
-                    <Link href={props.Lang == "Fa" ? "/fa" : "/"} className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.home : data.En.home}
+                    <Link href={"/"} className="hover:text-[#035cae]">
+                        {t("home")}
                     </Link>
                     <Link href={"/download"} className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.download : data.En.download}
+                        {t(("download"))}
                     </Link>
                     <Link href={"https://blog.parchlinux.ir/"} className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.blog : data.En.blog}
+                        {t("blog")}
                     </Link>
                     <Link href={"https://wiki.parchlinux.ir/"} className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.document : data.En.document}
+                        {t("document")}
                     </Link>
                     <Link href={"#about"} className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.about : data.En.about}
+                        {t("about")}
                     </Link>
                     <a href="https://daramet.com/parchlinux" className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.donate : data.En.donate}
+                        {t("donate")}
                     </a>
-                    <Link href={props.Lang === "Fa" ? "/fa/team" : "/team"} className="hover:text-[#035cae]">
-                        {props.Lang === "Fa" ? data.Fa.team : data.En.team}
+                    <Link href={"/team"} className="hover:text-[#035cae]">
+                        {t("team")}
                     </Link>
                 </nav>
                 <button
@@ -91,18 +88,18 @@ export default function Sidenav(props: propstype) {
                         ></path>
                     </svg>
                     <p className="text-lg">
-                        {props.Lang === "Fa" ? data.Fa.Lang : data.En.Lang}
+                        {t("Lang")}
                     </p>
                 </button>
                 {isLangOpen && (
                     <ul className="h-28 w-36 grid place-items-center bg-slate-100 text-black rounded-3xl mx-2 relative">
                         <li>
-                            <Link className="font-vazir" href={"/fa"}>
+                            <Link className="font-vazir" href={"/"} locale="fa">
                                 فارسی
                             </Link>
                         </li>
                         <li>
-                            <Link href={"/"}>English</Link>
+                            <Link href={"/"} locale="en">English</Link>
                         </li>
                         <div className="h-5 w-5 rounded-sm bg-slate-100 rotate-45 absolute bottom-[6rem] left-9"></div>
                     </ul>

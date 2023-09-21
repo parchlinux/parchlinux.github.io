@@ -1,25 +1,22 @@
 "use client";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { useState } from "react";
-import data from "@/Data/data.json";
+import { useTranslations } from 'next-intl';
 
-interface propstype {
-  Lang: string,
-}
-
-export default function Footer(props: propstype) {
+export default function Footer() {
+  const t = useTranslations('Index');
   const [isLangOpen, setIsLangOpen] = useState(false);
   return (
     <footer className="mt-auto">
       {isLangOpen && (
         <ul className="h-28 w-36 grid place-items-center bg-slate-100 text-black rounded-3xl mx-2 relative">
           <li>
-            <Link className="font-vazir" href={"/fa"}>
+            <Link className="font-vazir" href={"/"} locale="fa">
               فارسی
             </Link>
           </li>
           <li>
-            <Link href={"/"}>English</Link>
+            <Link href={"/"} locale="en">English</Link>
           </li>
           <div className="h-5 w-5 rounded-sm bg-slate-100 rotate-45 absolute top-[6rem] left-5"></div>
         </ul>
@@ -44,7 +41,7 @@ export default function Footer(props: propstype) {
           ></path>
         </svg>
         <p className="text-lg">
-          {props.Lang === "Fa" ? data.Fa.Lang : data.En.Lang}
+          {t("Lang")}
         </p>
       </button>
 
@@ -147,7 +144,7 @@ export default function Footer(props: propstype) {
           />
         </svg>
         <p className="text-2xl mb-2 mx-5 hidden md:block">
-          {props.Lang === "Fa" ? data.Fa.social : data.En.social}
+          {t("social")}
         </p>
       </div>
 
