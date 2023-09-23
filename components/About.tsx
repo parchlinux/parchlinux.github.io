@@ -6,17 +6,14 @@ export default function About() {
       id="about"
       className="flex flex-col justify-center items-center text-center mx-5 md:mx-20 mb-10 mt-40"
     >
-      <p className="text-2xl md:text-4xl">{t("WhatIs")}</p>
-      <br />
-      <p className="text-xl md:text-2xl leading-10">
+      <p className="text-2xl md:text-4xl mt-5">{t("WhatIs")}</p>
+      <p className="text-xl md:text-2xl leading-[5rem] mt-2 md:mt-4">
         {t("WhatIsExpanded")}
       </p>
-      <br />
-      <p className="text-2xl md:text-4xl">
+      <p className="text-2xl md:text-4xl mt-5">
         {t("WhyCall")}
       </p>
-      <br />
-      <p className="text-xl md:text-2xl leading-[4rem]">
+      <p className="text-xl md:text-2xl leading-[5rem] mt-2 md:mt-4">
         {t("WhyCallExpanded")}
       </p>
     </div>
