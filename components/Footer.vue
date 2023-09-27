@@ -10,38 +10,41 @@
         </div>
 
         <div class="max-w-screen-lg mx-auto py-8">
+            <span class="flex justify-center">
+                <a href="https://www.gnu.org/gnu40"><img src="https://www.gnu.org/gnu40/GNU40_badge-sm.png"
+                        alt="[ Celebrate 40 years of GNU! ]" /></a>
+            </span>
 
             <div class="sm:relative flex flex-col items-center gap-3 lg:flex-row sm:justify-between">
 
-
                 <span class="text-xs text-gray-300">© BSS OSF - All Rights Reserved.</span>
 
-
-                <div class="text-sm font-medium text-gray-300 px-4">
+                
+                <div class="hidden lg:block text-base font-medium text-gray-300 px-4">
                     <ul class="gap-6 flex flex-wrap justify-center">
                         <li>
                             <NuxtLink to="/" class="hover:text-blue-600">
-                                HOME
+                                Home
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/download" class="hover:text-blue-600">
-                                DOWNLOAD
+                                Download
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/about" class="hover:text-blue-600">
-                                ABOUT
+                                About
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/privacy" class="hover:text-blue-600">
-                                PRIVACY
+                                Privacy
                             </NuxtLink>
                         </li>
                         <li>
                             <NuxtLink to="/team" class="hover:text-blue-600">
-                                TEAM
+                                Team
                             </NuxtLink>
                         </li>
                     </ul>
@@ -51,25 +54,28 @@
                 <div class="flex flex-wrap gap-6">
 
                     <a href="https://github.com/parchlinux" target="_blank">
-                        <Icon name="uil:github" class="w-5 h-5 hover:scale-110 transition"/>
+                        <Icon name="uil:github" class="w-5 h-5 hover:scale-110 transition" />
                     </a>
 
                     <a href="https://twitter.com/bssfoss" target="_blank">
-                        <Icon name="uil:twitter" class="w-5 h-5 hover:scale-110 transition"/>
+                        <Icon name="uil:twitter" class="w-5 h-5 hover:scale-110 transition" />
                     </a>
 
                     <a href="https://discord.gg/9RW5cRByAM" target="_blank">
-                        <Icon name="ic:baseline-discord" class="w-5 h-5 hover:scale-110 transition"/>
+                        <Icon name="ic:baseline-discord" class="w-5 h-5 hover:scale-110 transition" />
                     </a>
 
                 </div>
+
+
 
             </div>
 
 
 
-    </div>
-</footer></template>
+        </div>
+    </footer>
+</template>
 <script>
 export default {
 
