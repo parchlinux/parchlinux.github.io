@@ -16,10 +16,7 @@
             </span>
 
             <div class="sm:relative flex flex-col items-center gap-3 lg:flex-row sm:justify-between">
-
-                <span class="text-xs text-gray-300">© BSS OSF - All Rights Reserved.</span>
-
-                
+                <span class="text-xs text-gray-300">BSS OSF - All Rights Reserved.</span>
                 <div class="hidden lg:block text-base font-medium text-gray-300 px-4">
                     <ul class="gap-6 flex flex-wrap justify-center">
                         <li>
