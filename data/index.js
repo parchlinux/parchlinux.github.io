@@ -36,7 +36,7 @@ export const usersInfo = {
         }
     },
     'parsa': {
-        'name': 'Parsa sedighi',
+        'name': 'Parsa',
         'stack': 'maintainer',
         'about': 'work on Parch development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/metantesan',
