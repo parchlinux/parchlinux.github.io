@@ -10,39 +10,35 @@
                 open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.
             </p>
 
-	<div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <NuxtLink to="/download">
-                <button
-                    class="font-medium inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-700 px-6 py-2 rounded-xl hover:translate-y-2 transition">
-                    Download
-                    <Icon name="iconoir:download" class="w-6 h-6 text-white ml-2" />
-                </button>
-            </NuxtLink>
-            <a href="https://daramet.com/parchlinux">
-                <button
-                    class="font-medium inline-flex items-center justify-center border-zinc-900 border px-6 py-2 rounded-xl hover:translate-y-2 transition">
-                    Donate
-                    <Icon name="fluent-mdl2:coffee-script" class="w-6 h-6 text-white ml-2" />
-                </button>
-            </a>
-	</div>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <NuxtLink to="/download">
+                    <button
+                        class="font-medium inline-flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-700 px-6 py-2 rounded-xl hover:translate-y-2 transition">
+                        Download
+                        <Icon name="iconoir:download" class="w-6 h-6 text-white ml-2" />
+                    </button>
+                </NuxtLink>
+                <a href="https://daramet.com/parchlinux">
+                    <button
+                        class="font-medium inline-flex items-center justify-center border-zinc-900 border px-6 py-2 rounded-xl hover:translate-y-2 transition">
+                        Donate
+                        <Icon name="fluent-mdl2:coffee-script" class="w-6 h-6 text-white ml-2" />
+                    </button>
+                </a>
+            </div>
 
         </div>
     </div>
 
 
     <div class="p-6 flex justify-center">
-
         <div class="flex flex-col justify-center items-center my-20">
-
             <div class="text-center flex flex-col gap-4 max-w-screen-sm">
                 <h2
                     class="font-bold text-[45px] text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-500 mb-10">
                     New Industry
                 </h2>
             </div>
-
-
 
             <div class="flex flex-wrap justify-center p-2 gap-12 text-justify mt-4">
 
@@ -101,8 +97,32 @@
         </div>
     </div>
 
-    <div class="max-w-screen-lg mx-auto p-4 min-h-[200px]">
+    <div class="max-w-[860px] flex items-center justify-center flex-col mx-auto p-6 min-h-screen my-10">
+
+        <div class="flex flex-col justify-center items-center gap-4 text-center px-4">
+            <h2 class="text-2xl sm:text-[32px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-500">
+                What is Parch Linux?
+            </h2>
+
+            <p class="font-normal text-[15px] leading-6">
+                The <strong>Parch Linux</strong> is a Linux distro based on <span class="text-sky-500">Arch</span>, that
+                tried to be pretty, easy to use, light, fast and stable.
+            </p>
+
+            <h2 class="text-2xl sm:text-[32px] font-bold mt-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500">
+                Why do we call this Parch?
+            </h2>
+
+            <p class="font-normal text-[15px] leading-6">
+                At the beginning of our work, we planned to make Parch a platform for Persian-speaking users, that's why
+                we
+                named it Parch ( <span class="text-sky-500">P</span>ersian <span class="text-sky-500">Arch</span> ). But
+                now
+                we have more comprehensive goals than before.
+            </p>
+        </div>
     </div>
+
 </template>
 
 <script setup>
