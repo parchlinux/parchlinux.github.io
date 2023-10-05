@@ -10,13 +10,8 @@
         </div>
 
         <div class="max-w-screen-lg mx-auto py-8">
-            <span class="flex justify-center">
-                <a href="https://www.gnu.org/gnu40"><img src="https://www.gnu.org/gnu40/GNU40_badge-sm.png"
-                        alt="[ Celebrate 40 years of GNU! ]" /></a>
-            </span>
-
             <div class="sm:relative flex flex-col items-center gap-3 lg:flex-row sm:justify-between">
-                <span class="text-xs text-gray-300">BSS OSF - All Rights Reserved.</span>
+                <span class="text-sm text-gray-300 text-center">© BSS OSF - All Rights Reserved.</span>
                 <div class="hidden lg:block text-base font-medium text-gray-300 px-4">
                     <ul class="gap-6 flex flex-wrap justify-center">
                         <li>
@@ -27,11 +22,6 @@
                         <li>
                             <NuxtLink to="/download" class="hover:text-blue-600">
                                 Download
-                            </NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/about" class="hover:text-blue-600">
-                                About
                             </NuxtLink>
                         </li>
                         <li>
@@ -49,6 +39,14 @@
 
 
                 <div class="flex flex-wrap gap-6">
+
+                    <a target='_blank' rel='me' href='http://mas.to/@bssfoss'>
+                        <Icon name="mdi:mastodon" class="w-5 h-5 hover:scale-110 transition" />
+                    </a>
+
+                    <a target='_blank' href='https://t.me/parchlinux'>
+                        <Icon name="mdi:telegram" class="w-5 h-5 hover:scale-110 transition" />
+                    </a>
 
                     <a href="https://github.com/parchlinux" target="_blank">
                         <Icon name="uil:github" class="w-5 h-5 hover:scale-110 transition" />
