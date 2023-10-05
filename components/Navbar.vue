@@ -13,7 +13,7 @@
                 class="w-9 h-9 hover:bg-zinc-900 rounded-lg p-1.5 transition" />
         </div>
 
-        <div class="hidden lg:block text-base font-medium">
+        <div class="hidden lg:block text-base">
             <ul class="gap-6 flex flex-wrap">
                 <li>
                     <NuxtLink to="/" class="hover:text-blue-600">
@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <NuxtLink to="/download" class="hover:text-blue-600">
-                        Download
+                        Downlaod
                     </NuxtLink>
                 </li>
                 <li>
@@ -36,8 +36,13 @@
                     </a>
                 </li>
                 <li>
-                    <NuxtLink to="/about" class="hover:text-blue-600">
-                        About
+                    <NuxtLink to="/privacy" class="hover:text-blue-600">
+                        Privacy
+                    </NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="/team" class="hover:text-blue-600">
+                        Team
                     </NuxtLink>
                 </li>
             </ul>
