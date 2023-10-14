@@ -5,7 +5,7 @@ import Ability from "@/components/Ability";
 import Footer from "@/components/Footer";
 export default function Home() {
   return (
-    <div className="min-h-screen scroll-smooth overflow-x-hidden bg-black text-white flex flex-col font-vazir">
+    <div className="min-h-screen scroll-smooth overflow-x-hidden bg-black text-white flex flex-col">
       <Nav />
       <Main />
       <About />
