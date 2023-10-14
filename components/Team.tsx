@@ -6,7 +6,7 @@ export default function Team() {
     return (
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center my-10 gap-7 overflow-hidden">
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2" >
+                <div className="flex flex-col justify-center items-center gap-2" >
                     <p className="text-xl md:text-3xl truncate">
                         {t('SOHRAB')}
                     </p>
@@ -71,7 +71,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("KOMEIL")}
                     </p>
@@ -121,7 +121,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("JAVID")}
                     </p>
@@ -156,7 +156,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("MANI")}
                     </p>
@@ -191,7 +191,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("PARSA")}
                     </p>
@@ -226,7 +226,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("SHAHRIAR")}
                     </p>
@@ -276,7 +276,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("ABOLFAZL")}
                     </p>
@@ -326,7 +326,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("AliMohammad")}
                     </p>
@@ -390,7 +390,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("AHMADREZA")}
                     </p>
@@ -425,7 +425,7 @@ export default function Team() {
                 </div>
             </li>
             <li className="h-[25.5rem] w-96 rounded-3xl shadow-2xl bg-[#1e1e1e] text-white text-center py-10 px-5 flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col justify-center items-center md:items-end gap-2">
+                <div className="flex flex-col justify-center items-center  gap-2">
                     <p className="text-xl md:text-3xl truncate">
                         {t("ALI")}
                     </p>
