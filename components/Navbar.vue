@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <NuxtLink to="/download" class="hover:text-blue-600">
-                        Downlaod
+                        Download
                     </NuxtLink>
                 </li>
                 <li>
