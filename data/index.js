@@ -24,17 +24,6 @@ export const usersInfo = {
             'mastodon': 'https://khiar.net/@abolfazl',
         }
     },
-    'komeil': {
-        'name': 'Komeil Parseh',
-        'stack': 'Founder',
-        'about': 'work on Parch development and maintenance.',
-        'image': 'https://avatars.githubusercontent.com/mmdbalkhi',
-        'socials': {
-            'twitter': 'https://twitter.com/mmdbalkhi',
-            'github': 'https://github.com/mmdbalkhi',
-            'mastodon': 'https://mas.to/@mmdbalkhi',
-        }
-    },
     'parsa': {
         'name': 'Parsa',
         'stack': 'maintainer',
