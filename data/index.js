@@ -1,4 +1,4 @@
-export const users = ['sohrab', 'komeil', 'javid', 'mani', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
+export const users = ['sohrab', 'javid', 'mani', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
 
 
 export const usersInfo = {
