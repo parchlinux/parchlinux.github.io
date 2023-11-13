@@ -9,7 +9,8 @@
 
                     Last updated: August 7, 2023 <br /> <br />
 
-                    Parch Linux ("us", "we", or "our") operates the <a href="https://www.parchlinux.ir"
+                    Parch Linux ("us", "we", or "our") operates the <a href="https://www.parchlinux.com"
+                        class='text-sky-500'>parchlinux.com</a>, <a href="https://www.parchlinux.ir"
                         class='text-sky-500'>parchlinux.ir</a> website and related services on a non-profit basis. Parch
                     Linux releases and distributions may originate from the core Parch Linux team or the broader Parch Linux
                     community (the "Service"). <br /><br />
