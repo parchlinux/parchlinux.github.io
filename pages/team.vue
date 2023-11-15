@@ -43,16 +43,10 @@ export default {
 
     data() {
         return {
-            currentUser: 'sohrab',
             menuToggle: false,
             users: users,
             usersInfo: usersInfo,
         }
     },
-    methods: {
-        setCurrentUser(name) {
-            this.currentUser = name;
-        }
-    }
 }
 </script>
