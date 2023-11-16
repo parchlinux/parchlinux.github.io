@@ -1,11 +1,10 @@
-export const users = ['sohrab', 'javid', 'mani', 'parsa', 'shahriar', 'abolfazl', 'ahmadreza', 'ali'];
+export const users = ['sohrab', 'javid', 'mani', 'pourya' , 'parsa', 'shahriar', 'abolfazl', 'alimohammad', 'alireza',  'ahmadreza', 'mostafa', 'mohammad', 'erfan'];
 
 
 export const usersInfo = {
     'sohrab': {
         'name': 'Sohrab Behdani',
         'stack': 'Founder',
-        'about': 'work on Parch development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/behdanisohrab',
         'socials': {
             'twitter': 'https://twitter.com/sbehdani',
@@ -16,7 +15,6 @@ export const usersInfo = {
     'abolfazl': {
         'name': 'Abolfazl Badie',
         'stack': 'Web Developer',
-        'about': 'work on Parch website development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/AFzOfficial',
         'socials': {
             'twitter': 'https://twitter.com/AFzOfficial',
@@ -27,7 +25,6 @@ export const usersInfo = {
     'parsa': {
         'name': 'Parsa',
         'stack': 'maintainer',
-        'about': 'work on Parch development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/metantesan',
         'socials': {
             'github': 'https://github.com/metantesan',
@@ -37,7 +34,6 @@ export const usersInfo = {
     'shahriar': {
         'name': 'shahriar ghasem poor',
         'stack': 'maintainer',
-        'about': 'work on Parch development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/shahriaarrr',
         'socials': {
             'twitter': 'https://twitter.com/shahriaarrr',
@@ -47,7 +43,6 @@ export const usersInfo = {
     'mani': {
         'name': 'Mani Jamali',
         'stack': 'Core Developer',
-        'about': 'work on Parch development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/manijamali2003',
         'socials': {
             'github': 'https://github.com/manijamali2003',
@@ -56,31 +51,68 @@ export const usersInfo = {
     'javid': {
         'name': 'Javid Izadi',
         'stack': 'Maintainer',
-        'about': 'work on Parch development and maintenance.',
         'image': 'https://avatars.githubusercontent.com/javidizadi',
         'socials': {
             'github': 'https://github.com/javidizadi',
             'mastodon': 'https://khiar.net/@alen_j05',
         }
     },
-    'ali': {
-        'name': 'Ali Emami',
-        'stack': 'Designer',
-        'about': 'work on Parch Artworks and Designs.',
-        'image': 'https://avatars.githubusercontent.com/AEK84',
-        'socials': {
-            'twitter': '',
-            'github': 'https://github.com/AEK84',
-        }
-    },
     'ahmadreza': {
         'name': 'AhmadReza Khatamian',
-        'stack': 'Designer',
-        'about': 'work on Parch Artworks and Designs.',
+        'stack': 'Graphic Designer',
         'image': 'https://avatars.githubusercontent.com/ahmadreza3',
         'socials': {
             'twitter': '',
             'github': 'https://github.com/ahmadreza3',
+        }
+    },
+    'erfan': {
+        'name': 'Erfan Arabi',
+        'stack': 'Journalist',
+        'image': 'https://avatars.githubusercontent.com/ERFouX',
+        'socials': {
+            'github': 'https://github.com/ERFouX',
+            'mastodon': 'https://mas.to/@ERFouX',
+        }
+    },
+    'alireza': {
+        'name': 'Alireza Sadeghi',
+        'stack': 'Web Developer',
+        'image': 'https://avatars.githubusercontent.com/alirezawdx',
+        'socials': {
+            'github': 'https://github.com/alirezawdx',
+        }
+    },
+    'pourya': {
+        'name': 'Pourya Barkati',
+        'stack': 'Rust Developer',
+        'image': 'https://avatars.githubusercontent.com/BrPrS',
+        'socials': {
+            'github': 'https://github.com/BrPrS',
+        }
+    },
+    'mohammad': {
+        'name': 'Mohammad Ehsan Nafari',
+        'stack': 'Ui/Ux Designer',
+        'image': 'https://avatars.githubusercontent.com/menafar2005',
+        'socials': {
+            'github': 'https://github.com/menafar2005',
+        }
+    },
+    'mostafa': {
+        'name': 'Mostafa Aminzar',
+        'stack': 'Ui/Ux Designer',
+        'image': 'https://avatars.githubusercontent.com/MosiO1998',
+        'socials': {
+            'github': 'https://github.com/MosiO1998',
+        }
+    },
+    'alimohammad': {
+        'name': 'Ali Mohammad Esmaeeli',
+        'stack': 'Frontend Developer',
+        'image': 'https://avatars.githubusercontent.com/AliMohammad-Esmaeeli',
+        'socials': {
+            'github': 'https://github.com/AliMohammad-Esmaeeli',
         }
     },
 };
