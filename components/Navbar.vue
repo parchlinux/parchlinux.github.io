@@ -26,13 +26,18 @@
                     </NuxtLink>
                 </li>
                 <li>
-                    <a href="https://blog.parchlinux.com" class="hover:text-blue-600">
+                    <a target="_blank" href="https://blog.parchlinux.com" class="hover:text-blue-600">
                         Blog
                     </a>
                 </li>
                 <li>
-                    <a href="https://wiki.parchlinux.com" class="hover:text-blue-600">
+                    <a target="_blank" href="https://wiki.parchlinux.com" class="hover:text-blue-600">
                         Wiki
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://forum.parchlinux.com" class="hover:text-blue-600">
+                        Forum
                     </a>
                 </li>
                 <li>
