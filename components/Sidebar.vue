@@ -28,16 +28,23 @@
             </li>
 
             <li>
-                <a href="https://blog.parchlinux.com" @click="menuToggle = false"
+                <a target="_blank" href="https://blog.parchlinux.com" @click="menuToggle = false"
                     class="flex items-center px-2 py-2.5 hover:bg-blue-500 rounded-xl hover:text-white">
                     <span class="flex-1 ml-3 whitespace-nowrap">BLOG</span>
                 </a>
             </li>
 
             <li>
-                <a href="https://wiki.parchlinux.com" @click="menuToggle = false"
+                <a target="_blank" href="https://wiki.parchlinux.com" @click="menuToggle = false"
                     class="flex items-center px-2 py-2.5 hover:bg-blue-500 rounded-xl hover:text-white">
                     <span class="flex-1 ml-3 whitespace-nowrap">WIKI</span>
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" href="https://forum.parchlinux.com" @click="menuToggle = false"
+                    class="flex items-center px-2 py-2.5 hover:bg-blue-500 rounded-xl hover:text-white">
+                    <span class="flex-1 ml-3 whitespace-nowrap">FORUM</span>
                 </a>
             </li>
             
