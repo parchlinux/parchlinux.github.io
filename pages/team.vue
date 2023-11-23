@@ -29,6 +29,10 @@
                         :href="usersInfo[currentUser].socials.mastodon" rel="me" class='social-link'>
                         <Icon name="mdi:mastodon" class='w-6 h-6' />
                     </a>
+                    <a v-if="usersInfo[currentUser].socials.donate" target='_blank'
+                        :href="usersInfo[currentUser].socials.donate" class='social-link'>
+                        <Icon name="ph:coffee-fill" class='w-6 h-6' />
+                    </a>
                 </div>
             </div>
         </div>
