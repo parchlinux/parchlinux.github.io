@@ -38,7 +38,7 @@ export const usersInfo = {
         'stack': 'Core Developer',
         'image': 'https://avatars.githubusercontent.com/danielcoderx',
         'socials': {
-            'twitter': 'https://twitter.com/danielcoderx',
+            'twitter': 'https://twitter.com/daniel_coderx',
             'github': 'https://github.com/danielcoderx',
             'mastodon': 'https://mastodon.social/@danielcoderx',
             'donate': 'https://daramet.com/danielcoderx',
