@@ -12,7 +12,7 @@
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 import Sidebar from '../components/Sidebar.vue'
-import "pure-snow.js/style.css"; // Remember to import style.css
+// import "pure-snow.js/style.css"; // Remember to import style.css
 import { createSnow, showSnow } from "pure-snow.js";
 setTimeout(()=>{
     createSnow(); // creates snowflakes and generate css for them
