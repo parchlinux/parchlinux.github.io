@@ -17,5 +17,8 @@
     "nuxt-icon": "^0.5.0",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "pure-snow.js": "^2.1.0"
   }
 }

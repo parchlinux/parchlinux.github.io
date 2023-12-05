@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr:false,
   app: {
     head: {
       titleTemplate: 'Parch Linux',
@@ -14,8 +15,8 @@ export default defineNuxtConfig({
         { name: 'twitter:description', content: 'Parch Linux is an open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.' },
         { property: 'og:description', content: 'Parch Linux is an open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.' },
         { name: 'keywords', content: 'parch linux, parchlinux, parch, linux' },
-        { property: 'og:image', content: 'https://parchlinux.ir/logo.png' },
-        { name: 'twitter:image', content: 'https://parchlinux.ir/logo.png' },
+        { property: 'og:image', content: 'https://parchlinux.com/logo.png' },
+        { name: 'twitter:image', content: 'https://parchlinux.com/logo.png' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://parchlinux.ir' },
         { name: 'google-site-verification', content: 'l9uMrT1nBJ_BEbB86DofFIMYcbQgbxE7PCKJOMZpVSI' },
@@ -28,9 +29,11 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: false },
+  // plugins: [{ src: "~/plugin/vsnow.js", mode: "client" }],
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
+    
   ],
   css: [
     '@/assets/css/main.css',
