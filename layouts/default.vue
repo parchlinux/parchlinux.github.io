@@ -4,7 +4,7 @@
         <slot />
         <Sidebar />
         <Footer />
-        <div id="snow"></div>
+        
     </div>
 </template>
 
@@ -15,7 +15,7 @@ import Sidebar from '../components/Sidebar.vue'
 // import "pure-snow.js/style.css"; // Remember to import style.css
 import { createSnow, showSnow } from "pure-snow.js";
 setTimeout(()=>{
-    createSnow(); // creates snowflakes and generate css for them
+createSnow(); // creates snowflakes and generate css for them
 showSnow(true);
 },1000)
 
