@@ -4,7 +4,7 @@
         <slot />
         <Sidebar />
         <Footer />
-        
+        <div id="snow"></div>
     </div>
 </template>
 
