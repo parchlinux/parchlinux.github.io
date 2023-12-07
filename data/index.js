@@ -31,6 +31,7 @@ export const usersInfo = {
         'socials': {
             'github': 'https://github.com/metantesan',
             'mastodon': 'https://mas.to/@metantesan',
+            'donate': 'https://daramet.com/hikari',
         }
     },
     'danial': {
@@ -131,6 +132,7 @@ export const usersInfo = {
         'image': 'https://avatars.githubusercontent.com/MosiO1998',
         'socials': {
             'github': 'https://github.com/MosiO1998',
+            'donate': 'https://daramet.com/mosio',
         }
     },
     'alimohammad': {
