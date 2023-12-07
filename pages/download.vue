@@ -11,6 +11,7 @@
             <IsoCard :title="'Parch CINNAMON'" :size="1.5" :url="'https://github.com/parchlinux/parch-iso-cinnamon/releases/'" :image="'/img/CINNAMON.webp'" />
         </div>
 
+        <div class="h-60"></div>
     </div>
 </template>
 

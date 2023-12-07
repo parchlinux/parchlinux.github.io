@@ -12,7 +12,7 @@
         <div class="max-w-screen-lg mx-auto py-8">
             <div class="sm:relative flex flex-col items-center gap-3 lg:flex-row sm:justify-between">
                 <span class="text-sm text-gray-300 text-center">© BSS OSF - All Rights Reserved.</span>
-                <div class="hidden lg:block text-base font-medium text-gray-300 px-4">
+                <div class="hidden lg:block text-sm 2xl:text-base font-medium text-gray-300 px-4">
                     <ul class="gap-6 flex flex-wrap justify-center">
                         <li>
                             <NuxtLink to="/" class="hover:text-blue-600">
@@ -22,6 +22,11 @@
                         <li>
                             <NuxtLink to="/download" class="hover:text-blue-600">
                                 Download
+                            </NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/about" class="hover:text-blue-600">
+                                About
                             </NuxtLink>
                         </li>
                         <li>
