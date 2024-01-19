@@ -1,4 +1,4 @@
-export const users = ['sohrab', 'danial', 'mani', 'javid', 'pourya' , 'parsa', 'shahriar', 'abolfazl', 'alimohammad', 'alireza', 'ali', 'pouya',  'ahmadreza', 'mostafa', 'mohammad', 'erfan'];
+export const users = ['sohrab', 'mani', 'javid', 'pourya' , 'parsa', 'shahriar', 'abolfazl', 'alimohammad', 'alireza', 'ali', 'pouya',  'ahmadreza', 'mostafa', 'mohammad'];
 
 
 export const usersInfo = {
@@ -32,17 +32,6 @@ export const usersInfo = {
             'github': 'https://github.com/metantesan',
             'mastodon': 'https://mas.to/@metantesan',
             'donate': 'https://daramet.com/hikari',
-        }
-    },
-    'danial': {
-        'name': 'Danial Hossein Gholami',
-        'stack': 'Core Developer',
-        'image': 'https://avatars.githubusercontent.com/danielcoderx',
-        'socials': {
-            'twitter': 'https://twitter.com/daniel_coderx',
-            'github': 'https://github.com/danielcoderx',
-            'mastodon': 'https://mastodon.social/@danielcoderx',
-            'donate': 'https://daramet.com/danielcoderx',
         }
     },
     'shahriar': {
@@ -79,16 +68,6 @@ export const usersInfo = {
         'socials': {
             'twitter': '',
             'github': 'https://github.com/ahmadreza3',
-        }
-    },
-    'erfan': {
-        'name': 'Erfan Arabi',
-        'stack': 'Journalist',
-        'image': 'https://avatars.githubusercontent.com/ERFouX',
-        'socials': {
-            'github': 'https://github.com/ERFouX',
-            'mastodon': 'https://mas.to/@ERFouX',
-            'donate': 'https://daramet.com/ERFouX',
         }
     },
     'alireza': {
