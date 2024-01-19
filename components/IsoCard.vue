@@ -19,12 +19,17 @@
 
         <div class="flex absolute bottom-0 w-full border-t border-zinc-800 divide-x divide-zinc-800">
 
-            <a :href="url" class='w-1/2 inline-flex text-blue-500 justify-center p-2 rounded-bl-lg'>
+            <a :href="url" class='w-1/2 inline-flex text-blue-500 justify-center p-2'>
                 <Icon name="iconoir:download" class="w-6 h-6" />
+            </a>
+            
+
+            <a href="http://mirror.parchlinux.com/" target="_blank" class='w-1/2 inline-flex text-blue-500 justify-center p-2'>
+                Mirror
             </a>
 
             <a target='_blank' href="https://fosstorrents.com/distributions/parch-linux/"
-                class='w-1/2 inline-flex text-blue-500 justify-center p-2 text-[15px] rounded-br-lg'>
+                class='w-1/2 inline-flex text-blue-500 justify-center p-2 text-[15px]'>
                 Torrent
             </a>
 
