@@ -5,7 +5,7 @@
 
         <div class="flex p-4 justify-between">
             <div class="flex flex-col mb-12">
-                <h1 class="text-lg font-medium mb-2">{{ title }}</h1>
+                <h1 class="text-lg font-medium mb-2">{{ title.toUpperCase() }}</h1>
                 <div class="flex items-center divide-x divide-zinc-800">
                     <span class="text-xs px-2">
                     {{ size }}GB

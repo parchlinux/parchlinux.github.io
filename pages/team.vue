@@ -1,11 +1,9 @@
 <template>
-    <div class="max-w-screen-lg min-h-screen flex justify-center mx-auto p-4 flex-wrap gap-6 py-10 mb-10">
-        <div v-for="currentUser in users">
-            <div
-                class="flex items-center justify-center flex-col mt-8 md:mt-0 bg-zinc-950/90 border border-zinc-800 rounded-xl p-4">
+    <div class="max-w-screen-xl min-h-screen flex justify-center mx-auto p-4 flex-wrap gap-6 py-10 mb-10">
+            <div v-for="currentUser in users" class="max-w-xs w-full flex items-center justify-center flex-col mt-8 md:mt-0 bg-zinc-950/90 border border-zinc-800 rounded-xl p-4">
                 <div class="mb-4 flex flex-col justify-center items-center sm:items-start p-3">
                     <img :src="usersInfo[currentUser].image" :alt="usersInfo[currentUser].name"
-                        class="rounded-xl w-full sm:w-52" />
+                        class="rounded-xl w-full sm:w-70" />
 
                     <div class="mt-6 sm:mt-2 sm:ml-4">
                         <h2 class="font-medium text-center sm:text-left text-base mb-2">
@@ -35,13 +33,12 @@
                     </a>
                 </div>
             </div>
-        </div>
 
     </div>
 </template>
 
 <script>
-import { users, usersInfo } from '../data/index'
+import { users, usersInfo } from '../data/users'
 
 export default {
 
