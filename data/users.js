@@ -1,4 +1,4 @@
-export const users = ['sohrab', 'mani', 'javid', 'pourya' , 'parsa', 'shahriar', 'abolfazl', 'alimohammad', 'alireza', 'ali', 'pouya',  'ahmadreza', 'mostafa', 'mohammad'];
+export const users = ['sohrab', 'javid', 'pourya' , 'parsa', 'shahriar', 'alimohammad', 'alireza', 'ali', 'pouya',  'ahmadreza', 'mostafa', 'mohammad', 'erfan', 'mohali'];
 
 
 export const usersInfo = {
@@ -11,17 +11,6 @@ export const usersInfo = {
             'github': 'https://github.com/behdanisohrab',
             'mastodon': 'https://mas.to/@sohrabbehdani',
             'donate': 'https://daramet.com/sohrabbehdani',
-        }
-    },
-    'abolfazl': {
-        'name': 'Abolfazl Badie',
-        'stack': 'Web Team Lead',
-        'image': 'https://avatars.githubusercontent.com/AFzOfficial',
-        'socials': {
-            'twitter': 'https://twitter.com/AFzOfficial',
-            'github': 'https://github.com/AFzOfficial',
-            'mastodon': 'https://khiar.net/@abolfazl',
-            'donate': 'https://daramet.com/AFzOfficial',
         }
     },
     'parsa': {
@@ -41,14 +30,6 @@ export const usersInfo = {
         'socials': {
             'twitter': 'https://twitter.com/shahriaarrr',
             'github': 'https://github.com/shahriaarrr',
-        }
-    },
-    'mani': {
-        'name': 'Mani Jamali',
-        'stack': 'Core Developer',
-        'image': 'https://avatars.githubusercontent.com/manijamali2003',
-        'socials': {
-            'github': 'https://github.com/manijamali2003',
         }
     },
     'javid': {
@@ -130,6 +111,26 @@ export const usersInfo = {
         'socials': {
             'github': 'https://github.com/AliAlmasi',
             'donate': 'https://daramet.com/alialmasi',
+        }
+    },
+    'erfan':{
+        'name': 'Erfan Arabi',
+        'stack': 'Contributer',
+        'image': 'https://avatars.githubusercontent.com/ERFouX',
+        'socials': {
+            'github': 'https://github.com/ERFouX',
+            'mastodon': 'https://mas.to/@ERFouX',
+            'donate': 'https://daramet.com/ERFouX',
+        }
+    },
+        'mohammad ali':{
+        'name': 'Mohammad Ali Shariat Zade',
+        'stack': 'Contributer',
+        'image': 'https://avatars.githubusercontent.com/mohali4',
+        'socials': {
+            'github': 'https://github.com/mohali4',
+            'mastodon': 'https://mastodon.social/@mohali4',
+            'donate': 'https://daramet.com/mohali4',
         }
     },
 };
