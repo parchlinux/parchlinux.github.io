@@ -1,4 +1,4 @@
-export const users = ['sohrab', 'javid', 'pourya' , 'parsa', 'shahriar', 'alimohammad', 'alireza', 'ali', 'pouya',  'ahmadreza', 'mostafa', 'mohammad', 'erfan', 'mohammadali'];
+export const users = ['sohrab', 'parsa', 'hamidreza', 'javid', 'pourya' , 'shahriar', 'alimohammad', 'alireza', 'ali', 'pouya',  'ahmadreza', 'mostafa', 'mohammad', 'erfan', 'mohammadali'];
 
 
 export const usersInfo = {
@@ -24,7 +24,7 @@ export const usersInfo = {
         }
     },
     'hamidreza': {
-        'name':'hamidreza',
+        'name':'HamidReza',
         'stack':'maintainer',
         'image':'https://avatars.githubusercontent.com/HRMCA',
         'socuals':{
@@ -43,7 +43,7 @@ export const usersInfo = {
     },
     'javid': {
         'name': 'Javid Izadi',
-        'stack': 'Maintainer',
+        'stack': 'Contributer',
         'image': 'https://avatars.githubusercontent.com/javidizadi',
         'socials': {
             'github': 'https://github.com/javidizadi',
