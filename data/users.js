@@ -27,7 +27,7 @@ export const usersInfo = {
         'name':'Hamid Reza',
         'stack':'maintainer',
         'image':'https://avatars.githubusercontent.com/HRMCA',
-        'socuals':{
+        'socials':{
             'github':'https://github.com/HRMCA',
             'mastodon':'https://mas.to/@HRM_CA'
         }
