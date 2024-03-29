@@ -15,7 +15,7 @@ export const usersInfo = {
     },
     'parsa': {
         'name': 'Parsa',
-        'stack': 'maintainer',
+        'stack': 'Founder',
         'image': 'https://avatars.githubusercontent.com/metantesan',
         'socials': {
             'github': 'https://github.com/metantesan',
