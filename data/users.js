@@ -23,6 +23,15 @@ export const usersInfo = {
             'donate': 'https://daramet.com/hikari',
         }
     },
+    'hamidreza': {
+        'name':'hamidreza',
+        'stack':'maintainer',
+        'image':'https://avatars.githubusercontent.com/HRMCA',
+        'socuals':{
+            'github':'https://github.com/HRMCA',
+            'mastodon':'https://mas.to/@HRM_CA'
+        }
+    },
     'shahriar': {
         'name': 'shahriar ghasem poor',
         'stack': 'maintainer',
