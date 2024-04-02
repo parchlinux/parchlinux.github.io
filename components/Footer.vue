@@ -1,6 +1,5 @@
 <template>
     <footer class="relative border-t border-zinc-900">
-
         <div class="absolute inset-x-0 flex items-center justify-center -top-3">
             <div class="relative flex justify-center h-10 w-14">
                 <div class="absolute w-full h-full inset-0 -top-[2px] blur-[6px] bg-black rounded-full">
@@ -8,7 +7,6 @@
                 <img src="/img/logo.svg" class="relative w-6 h-6">
             </div>
         </div>
-
         <div class="max-w-screen-lg mx-auto py-8">
             <div class="sm:relative flex flex-col items-center gap-3 lg:flex-row sm:justify-between">
                 <span class="text-sm text-gray-300 text-center">© BSS OSF - All Rights Reserved.</span>
@@ -40,6 +38,9 @@
                             </NuxtLink>
                         </li>
                     </ul>
+                    <br>
+                    <p class="text-center">Power by <a href="https://vuejs.org" class="active-link">Vue.js</a></p>
+                    <p class="text-center">View website source <a href="https://github.com/parchlinux/parchlinux.github.io" class="active-link">at</a></p>
                 </div>
 
 
@@ -64,11 +65,8 @@
                     <a href="https://discord.gg/9RW5cRByAM" target="_blank">
                         <Icon name="ic:baseline-discord" class="w-5 h-5 hover:scale-110 transition" />
                     </a>
-
                 </div>
-
-
-
+                
             </div>
 
 
@@ -81,3 +79,4 @@ export default {
 
 }
 </script>
+
