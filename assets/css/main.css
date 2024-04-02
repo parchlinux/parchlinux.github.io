@@ -13,7 +13,7 @@
 }
 
 .active-link {
-    @apply text-sky-400 border border-zinc-800 font-medium
+    color: #00ffff;
 }
 
 .social-link {
