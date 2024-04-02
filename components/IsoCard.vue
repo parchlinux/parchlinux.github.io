@@ -32,7 +32,11 @@
                 class='w-1/2 inline-flex text-blue-500 justify-center p-2 text-[15px]'>
                 Torrent
             </a>
-
+            
+            <a target='_blank' href="https://github.com/parchlinux/parch-iso-template"
+                class='w-1/2 inline-flex text-blue-500 justify-center p-2 text-[15px]'>
+                Github
+            </a>
         </div>
 
     </div>
