@@ -8,6 +8,8 @@
             </h1>
             <p class="px-3 text-sm max-w-lg text-center mb-8">Parch Linux is an
                 open-source, Arch-based Linux distribution, that tried to be pretty, easy to use, light, fast and stable.
+                <br \>
+                If you need a arch-based linux distro, You can try parch linux
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -98,7 +100,6 @@
     </div>
 
     <div class="h-60"></div>
-
 </template>
 
 <script setup>
@@ -106,3 +107,4 @@ useHead({
     title: "Parch Linux",
 })
 </script>
+
