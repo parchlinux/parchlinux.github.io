@@ -135,11 +135,11 @@ export const usersInfo = {
         'mohammadali':{
         'name': 'Mohammad Ali',
         'stack': 'Contributer',
-        'image': 'https://avatars.githubusercontent.com/mohali4',
+        'image': 'https://avatars.githubusercontent.com/meshya',
         'socials': {
-            'github': 'https://github.com/mohali4',
-            'mastodon': 'https://mastodon.social/@mohali4',
-            'donate': 'https://daramet.com/mohali4',
+            'github': 'https://github.com/meshya',
+            'mastodon': 'https://mas.to/@meshya',
+            'donate': 'https://daramet.com/meshya',
         }
     },
 };
